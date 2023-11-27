@@ -114,6 +114,7 @@ img {
 
 .social-icon ion-icon {
   font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .social-icon ion-icon:nth-child(1) {
