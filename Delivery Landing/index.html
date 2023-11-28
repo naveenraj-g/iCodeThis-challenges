@@ -33,7 +33,7 @@
               Food, drinks and desserts available for delivery or pickup
             </p>
 
-            <form>
+            <form class="hero-form">
               <input
                 type="text"
                 placeholder="Enter delivery address"
@@ -78,5 +78,12 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script>
+      const form = document.querySelector(".hero-form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    </script>
   </body>
 </html>
