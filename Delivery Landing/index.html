@@ -8,61 +8,67 @@
   </head>
   <body>
     <div class="container">
-    <header class="header">
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-list-item">
-            EN
-            <span class="arrow"
-              ><ion-icon name="chevron-down-outline"></ion-icon
-            ></span>
-          </li>
-          <li class="header-nav-list-item">Contact</li>
-          <li class="header-nav-list-item">Log in</li>
-          <li class="header-nav-list-item"><button class="signup-btn">Sign Up</button></li>
-        </ul>
-      </nav>
-    </header>
+      <header class="header">
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item-1">
+              <p>EN</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </li>
+            <li class="header-nav-list-item">Contact</li>
+            <li class="header-nav-list-item">Log in</li>
+            <li class="header-nav-list-item">
+              <button class="signup-btn">Sign Up</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="section-hero">
+          <div class="wrapper">
+            <h1 class="heading-primary">
+              Food delivery from the best restaurants in your town
+            </h1>
+            <p class="delivery-desc">
+              Food, drinks and desserts available for delivery or pickup
+            </p>
 
-    <main>
-      <section class="section-hero">
-        <h1 class="heading-primary">
-          Food delivery from the best restaurants in your town
-        </h1>
-        <p class="delivery-desc">
-          Food, drinks and desserts available for delivery or pickup
-        </p>
-      
+            <form>
+              <input
+                type="text"
+                placeholder="Enter delivery address"
+                class="address-input"
+              />
+              <button type="submit" class="find-btn">Find Food</button>
+            </form>
+          </div>
+        </section>
+      </main>
 
-      <form>
-        <input
-          type="text"
-          placeholder="Enter delivery address"
-          class="address-input"
-        />
-        <button type="submit" class="find-btn">Find Food</button>
-      </form>
-    </section>
-    </main>
-
-    <footer class="footer">
-      <nav class="footer-nav">
-        <ul class="footer-nav-list">
-          <li class="footer-nav-list-item">
+      <footer class="footer">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
             <li>Terms of Privacy</li>
             <li>Cookies</li>
             <li>About</li>
             <li>Contact</li>
-          </li>
-          <li class="footer-nav-list-item">&copy; 2019</li>
-          <li class="footer-nav-list-item">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-  </div>
+          </ul>
+
+          <ul class="footer-nav-copy">
+            <li>&copy; 2019</li>
+          </ul>
+
+          <ul class="footer-nav-social">
+            <li>
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
 
     <script
       type="module"
