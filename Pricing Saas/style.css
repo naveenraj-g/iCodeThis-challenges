@@ -91,71 +91,36 @@ body {
   letter-spacing: 0.05rem;
 }
 
+.toggle-container {
+  position: relative;
+  cursor: pointer;
+}
+
 .toggle-bar {
   width: 4%;
   border-radius: 100rem;
   background-color: var(--current-plan-bg);
   padding: 1.2rem 2.4rem;
   position: relative;
-  cursor: pointer;
 }
 
-.toggle-bar::before {
-  content: "";
+.toggle-ball {
+  position: absolute;
   height: 1.8rem;
   width: 1.8rem;
   border-radius: 50%;
   background-color: var(--current-plan-color);
-  position: absolute;
   top: 10%;
-  right: 8%;
+  transition: transform 0.4s ease-in-out;
 }
 
-/* Plan container */
-/* .plans-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+.toggle-ball-left {
+  transform: translateX(19%);
 }
 
-.plan-card {
-  background-color: var(--plan-bg);
-  padding: 2rem 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.toggle-ball-right {
+  transform: translateX(140%);
 }
-
-.plan-card > h3 {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  margin-bottom: 1.6rem;
-}
-
-.plan-card .cost {
-  font-size: 4.4rem;
-  font-weight: 700;
-}
-
-.plan-card .cost span {
-  font-size: 1.8rem;
-}
-
-.plan-card .enterprise-heading {
-  font-size: 2.8rem;
-  margin-top: 1.4rem;
-}
-
-.plan-card .pro-maus {
-  width: 100%;
-  padding: 1.4rem 3.2rem;
-  margin-top: 1.2rem;
-  background: transparent;
-  color: var(--plan-option-color);
-  border: 0.2rem solid #4a4d53;
-} */
 
 .plans-container {
   display: grid;

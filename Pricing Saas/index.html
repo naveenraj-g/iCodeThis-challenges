@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Saas</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <section class="section-pricing">
@@ -20,7 +21,10 @@
           <h1 class="heading-primary">Choose a plan</h1>
           <div class="bill-type">
             <p>Billed monthly</p>
-            <div class="toggle-bar"></div>
+            <div class="toggle-container">
+              <div class="toggle-bar"></div>
+              <div class="toggle-ball toggle-ball-left"></div>
+            </div>
             <p>Billed anually</p>
           </div>
         </div>
@@ -28,7 +32,7 @@
         <div class="plans-container">
           <div class="plan-card starter">
             <h3>Starter</h3>
-            <h1 class="cost">$19</h1>
+            <h1 class="cost"></h1>
             <ul class="plan-desc">
               <li>500 MAUs</li>
               <li>3 projects</li>
@@ -42,7 +46,7 @@
 
           <div class="plan-card pro">
             <h3>Pro</h3>
-            <h1 class="cost">$99<span> / month</span></h1>
+            <h1 class="cost"></h1>
             <div class="relat">
               <select class="pro-maus">
                 <option value="2500" selected>2500 MAUs</option>
