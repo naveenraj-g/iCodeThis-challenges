@@ -40,7 +40,7 @@ body {
 
 .container {
   max-width: 120rem;
-  margin-top: 8.4rem;
+  margin: 8.4rem auto;
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
