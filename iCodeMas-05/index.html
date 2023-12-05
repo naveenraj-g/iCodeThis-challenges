@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iCodeMas-05</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <section class="header-section">
@@ -12,7 +13,7 @@
         <div class="discount-container">
           <div class="discount">
             <p>Use code "XMAS" for a 20% discount at checkout.</p>
-            <ion-icon name="close-outline"></ion-icon>
+            <ion-icon name="close-outline" id="close-btn"></ion-icon>
           </div>
         </div>
         <nav class="nav">
@@ -35,6 +36,38 @@
           ></a>
         </nav>
       </header>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <h1 class="primary-heading">Featured Products</h1>
+        <p class="fp-desc">
+          Discover the magic of thr season with our handpicked Featured
+          Products. From enchanting decorations to delightful gifts, these
+          curated items are sure to add a touch of joy to your festive
+          celebrations.
+        </p>
+        <div class="product-menu">
+          <figure class="tree menu-img">
+            <img
+              src="./images/christmas-tree.webp"
+              alt="christmas-tree"
+              id="tree-img"
+            />
+          </figure>
+          <figure class="gift menu-img">
+            <img src="./images/gift.webp" alt="gift" id="gift-img" />
+          </figure>
+          <figure class="bread menu-img">
+            <img
+              src="./images/gingerbread.webp"
+              alt="gingerbread"
+              id="bread-img"
+            />
+          </figure>
+        </div>
+        <div class="product-details"></div>
+      </div>
     </section>
 
     <script
