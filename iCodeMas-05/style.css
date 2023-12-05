@@ -1,0 +1,144 @@
+:root {
+  --discount-bg: #fcd6cf;
+  --discount-color: #2d1514;
+
+  --nav-bg: #ffffff;
+  --nav-color: #18191e;
+  --search-bg: #eff3f6;
+  --search-placeholder-color: #afb3b6;
+  --cart-notify-color: #e35851;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: darkgrey;
+}
+
+/* Header Section */
+.header {
+  background-color: var(--nav-bg);
+}
+
+.header .discount-container {
+  background-color: var(--discount-bg);
+}
+
+.header .discount-container .discount {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 98% 2%;
+  padding: 0.8rem 3.4rem;
+  font-size: 1.2rem;
+  color: var(--discount-color);
+  font-weight: 500;
+  align-items: center;
+}
+
+.header .discount > p {
+  justify-self: center;
+}
+
+.header .discount > ion-icon {
+  font-size: 1.8rem;
+  justify-self: end;
+  cursor: pointer;
+}
+
+.nav {
+  height: 5.8rem;
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  padding: 1.2rem 3.4rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.8rem;
+  color: var(--nav-color);
+}
+
+.nav > h1 a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: inherit;
+}
+
+.nav > a {
+  display: flex;
+  font-size: 1.8rem;
+  margin-right: 0.4rem;
+  color: inherit;
+  position: relative;
+}
+
+.nav > a::after {
+  content: "2";
+  font-size: 0.9rem;
+  position: absolute;
+  background-color: var(--cart-notify-color);
+  height: 13px;
+  width: 13px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  right: -15%;
+  top: -20%;
+}
+
+.nav .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav .nav-items .search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav .nav-items .search-bar > input {
+  padding: 1rem 3.2rem;
+  border-radius: 100rem;
+  border: none;
+  background-color: var(--search-bg);
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.nav .nav-items .search-bar > input::placeholder {
+  color: var(--search-placeholder-color);
+}
+
+.nav .nav-items .search-bar .search-icon {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 4%;
+}
+
+.nav .nav-items .nav-item ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav .nav-items .nav-item ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
