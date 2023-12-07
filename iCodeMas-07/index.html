@@ -3,42 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iCodeMas-06</title>
+    <title>iCodeMas-07</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <section class="header-section">
-      <header class="header">
-        <div class="discount-container">
-          <div class="discount">
-            <p>Use code "XMAS" for a 20% discount at checkout.</p>
-            <ion-icon name="close-outline" id="close-btn"></ion-icon>
-          </div>
-        </div>
-        <nav class="nav">
-          <h1 class="logo"><a href="#">iCodeMas</a></h1>
-          <ul class="nav-items">
-            <li class="search-bar">
-              <input type="text" placeholder="Search" />
-              <ion-icon name="search-outline" class="search-icon"></ion-icon>
-            </li>
-            <li class="nav-item">
-              <ul>
-                <li><a href="#">Featured</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </li>
-          </ul>
-          <a href="#"
-            ><ion-icon name="bag-outline" class="checkout-icon"></ion-icon
-          ></a>
-        </nav>
-      </header>
-    </section>
-
     <section class="product-section">
+      <div class="filter-container">
+        <h2>Filters</h2>
+        <h3 class="filter-title">Category</h3>
+        <ul class="filter-menu">
+          <li class="filter-item">
+            <input type="checkbox" id="cookies" />
+            <label for="cookies">Cookies</label>
+          </li>
+          <li class="filter-item">
+            <input type="checkbox" id="candles" />
+            <label for="candles">Candles</label>
+          </li>
+          <li class="filter-item">
+            <input type="checkbox" id="ornaments" />
+            <label for="ornaments">Ornaments</label>
+          </li>
+          <li class="filter-item">
+            <input type="checkbox" id="accessories" checked />
+            <label for="accessories">Accessories</label>
+          </li>
+        </ul>
+
+        <h3 class="filter-title">Colors</h3>
+        <ul class="filter-menu">
+          <li class="filter-item">
+            <input type="checkbox" id="red" />
+            <label for="red">Red</label>
+          </li>
+          <li class="filter-item">
+            <input type="checkbox" id="white" />
+            <label for="white">White</label>
+          </li>
+          <li class="filter-item">
+            <input type="checkbox" id="green" />
+            <label for="green">Green</label>
+          </li>
+          <li class="filter-item">
+            <input type="checkbox" id="brown" />
+            <label for="brown">Brown</label>
+          </li>
+        </ul>
+
+        <h3 class="filter-title">Size</h3>
+        <ul class="filter-menu">
+          <li class="filter-item">
+            <input type="checkbox" id="small" />
+            <label for="small">Small</label>
+          </li>
+          <li class="filter-item">
+            <input type="checkbox" id="medium" />
+            <label for="medium">Medium</label>
+          </li>
+          <li class="filter-item">
+            <input type="checkbox" id="large" />
+            <label for="large">Large</label>
+          </li>
+        </ul>
+      </div>
       <div class="container">
         <ul class="product-wrapper">
           <li class="product-list">
