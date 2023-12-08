@@ -1,13 +1,16 @@
 const discountContainer = document.querySelector(".discount-container");
-const closeBtn = document.getElementById("close-btn");
 const productContainer = document.querySelector(".container");
 const hamburger = document.querySelector(".hamburger");
 const navItem = document.querySelector(".nav-item");
+const craft = document.querySelector(".craft");
+const checkoutIcon = document.querySelector(".checkout-icon");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("actives");
     navItem.classList.toggle("active");
 });
+
+checkoutIcon.addEventListener("click", () => craft.classList.toggle("craft-active"));
 
 const productDetails = [
     {
@@ -109,10 +112,6 @@ productDetails.forEach(ele => {
   </ul>
     `
     productContainer.insertAdjacentHTML("beforeend", html);
-})
-
-closeBtn.addEventListener("click", () => {
-    discountContainer.style.display = "none";
 });
 
 const craftBtn = document.querySelectorAll(".craft-btn");
