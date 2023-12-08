@@ -188,6 +188,6 @@ function calTotalPrice(productArr) {
 }
 
 function checkoutNotifycount(arr) {
-    checkoutIcon.setAttribute("data-before", arr);
+    checkoutIcon.setAttribute("notify-count", arr);
 }
 checkoutNotifycount(0);

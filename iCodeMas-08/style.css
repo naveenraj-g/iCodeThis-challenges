@@ -99,7 +99,7 @@ body {
 }
 
 .nav .icons > a::before {
-  content: attr(data-before);
+  content: attr(notify-count);
   font-size: 0.9rem;
   position: absolute;
   background-color: var(--cart-notify-color);
