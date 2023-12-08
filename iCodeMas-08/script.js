@@ -4,6 +4,9 @@ const hamburger = document.querySelector(".hamburger");
 const navItem = document.querySelector(".nav-item");
 const craft = document.querySelector(".craft");
 const checkoutIcon = document.querySelector(".checkout-icon");
+const cartTotalPrice = document.querySelector(".total-price");
+
+cartTotalPrice.innerText = "$0.00";
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("actives");
@@ -110,15 +113,77 @@ productDetails.forEach(ele => {
       </ul>
     </li>
   </ul>
-    `
+    `;
     productContainer.insertAdjacentHTML("beforeend", html);
 });
 
 const craftBtn = document.querySelectorAll(".craft-btn");
-craftBtn.forEach(e => {
+const craftContainer = document.querySelector(".craft-item-con");
+var deleteBtn;
+craftContainer.innerHTML = "";
+
+const craftItem = [];
+craftBtn.forEach((e, i) => {
     e.addEventListener("click", () => {
         e.textContent = "";
         e.insertAdjacentHTML("beforeend", (`Added to cart <ion-icon name="bag-check-outline"></ion-icon>`));
+        if (!e.classList.contains("added-craft")) {
+            const craftHTML = `
+            <div class="craft-item">
+            <img src=${productDetails[i].imgSrc} alt=${productDetails[i].title} />
+            <div class="craft-item-detail">
+              <div>
+                <h2>${productDetails[i].title}</h2>
+                <p>$${productDetails[i].price}</p>
+                <div class="btn-container">
+                  <button class="btn-min">-</button>
+                  <p class="quantity">1</p>
+                  <button class="btn-add">+</button>
+                </div>
+              </div>
+              <ion-icon name="trash-outline" class="delete-btn"></ion-icon>
+            </div>
+          </div>
+            `;
+            const price = productDetails[i].price;
+            const product = {
+                html: craftHTML,
+                price: price,
+                productIndex: i,
+            }
+            craftItem.push(product);
+            craftContainer.innerHTML = "";
+            craftItem.forEach(cart => {
+                craftContainer.insertAdjacentHTML("beforeend", cart.html);
+                cartTotalPrice.innerText = `$${calTotalPrice(craftItem).toFixed(2)}`;
+                checkoutNotifycount(craftItem.length);
+            });
+        }
         e.classList.add("added-craft");
+
+        craftContainer.addEventListener("click", (event) => {
+            if (event.target.classList.contains("delete-btn")) {
+                const parentElement = event.target.parentNode.parentNode;
+                const index = Array.from(parentElement.parentNode.children).indexOf(parentElement);
+
+                parentElement.remove();
+                craftItem.splice(index, 1);
+                cartTotalPrice.innerText = `$${calTotalPrice(craftItem).toFixed(2)}`;
+                checkoutNotifycount(craftItem.length);
+            }
+        });
     });
 });
+
+function calTotalPrice(productArr) {
+    if (productArr.length === 0) return 0;
+    const total = productArr.reduce((acc, ele) => {
+        return acc + ele.price;
+    }, 0);
+    return total;
+}
+
+function checkoutNotifycount(arr) {
+    checkoutIcon.setAttribute("data-before", arr);
+}
+checkoutNotifycount(0);

@@ -98,8 +98,8 @@ body {
   position: relative;
 }
 
-.nav .icons > a::after {
-  content: "2";
+.nav .icons > a::before {
+  content: attr(data-before);
   font-size: 0.9rem;
   position: absolute;
   background-color: var(--cart-notify-color);
@@ -362,7 +362,8 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 2.4rem;
+  justify-content: space-between;
+  /* gap: 2.4rem; */
 }
 
 .craft-item-detail ion-icon {
