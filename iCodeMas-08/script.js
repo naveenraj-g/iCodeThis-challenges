@@ -119,7 +119,6 @@ productDetails.forEach(ele => {
 
 const craftBtn = document.querySelectorAll(".craft-btn");
 const craftContainer = document.querySelector(".craft-item-con");
-var deleteBtn;
 craftContainer.innerHTML = "";
 
 const craftItem = [];
@@ -161,13 +160,18 @@ craftBtn.forEach((e, i) => {
         }
         e.classList.add("added-craft");
 
-        craftContainer.addEventListener("click", (event) => {
-            if (event.target.classList.contains("delete-btn")) {
-                const parentElement = event.target.parentNode.parentNode;
+        craftContainer.addEventListener("click", (e) => {
+            if (e.target.classList.contains("delete-btn")) {
+                const parentElement = e.target.parentNode.parentNode;
                 const index = Array.from(parentElement.parentNode.children).indexOf(parentElement);
 
                 parentElement.remove();
-                craftItem.splice(index, 1);
+                const removedEle = craftItem.splice(index, 1);
+                actualProductIndex = removedEle[0].productIndex;
+                const btn = craftBtn[actualProductIndex];
+                btn.innerHTML = "";
+                btn.classList.remove("added-craft");
+                btn.insertAdjacentHTML("beforeend", 'Add to cart <ion-icon name="bag-outline"></ion-icon>');
                 cartTotalPrice.innerText = `$${calTotalPrice(craftItem).toFixed(2)}`;
                 checkoutNotifycount(craftItem.length);
             }
