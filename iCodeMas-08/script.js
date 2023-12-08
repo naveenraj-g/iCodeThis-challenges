@@ -119,11 +119,11 @@ productDetails.forEach(ele => {
 
 const craftBtn = document.querySelectorAll(".craft-btn");
 const craftContainer = document.querySelector(".craft-item-con");
-craftContainer.innerHTML = "";
 
 const craftItem = [];
 craftBtn.forEach((e, i) => {
     e.addEventListener("click", () => {
+        craftContainer.innerHTML = "";
         e.textContent = "";
         e.insertAdjacentHTML("beforeend", (`Added to cart <ion-icon name="bag-check-outline"></ion-icon>`));
         if (!e.classList.contains("added-craft")) {

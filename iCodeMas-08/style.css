@@ -325,7 +325,8 @@ body {
   position: fixed;
   top: 3%;
   right: 0;
-  max-width: 90vw;
+  /* max-width: 90vw; */
+  width: 30rem;
   color: var(--nav-color);
   transform: translateX(40rem);
   transition: transform 0.3s ease-in;
