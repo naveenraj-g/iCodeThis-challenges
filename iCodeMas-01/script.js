@@ -32,7 +32,7 @@ const countDownTimer = function () {
             greet.style.display = "block";
             clearInterval(countDownInterval);
         }
-    }, 1000)
+    }, 1000);
 }
 
 countDownTimer();
