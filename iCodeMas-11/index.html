@@ -15,30 +15,27 @@
           Show them you care with a gift they'll love. With an online gift card,
           they can choose from a wide selection of products.
         </p>
-        <div class="amount">
-          <div class="amount-selected">
-            <button class="min">-</button>
-            <input
-              type="text"
-              required
-              class="cost-input active"
-              value="$200"
-            />
-            <button class="add">+</button>
+        <form class="cost-form">
+          <div class="amount">
+            <div class="amount-selected">
+              <button class="min">-</button>
+              <input type="text" required class="cost-input" value="$0" />
+              <button class="add">+</button>
+            </div>
+            <div class="amounts">
+              <button class="amount-btn">$25</button>
+              <button class="amount-btn">$50</button>
+              <button class="amount-btn">$75</button>
+              <button class="amount-btn">$100</button>
+              <button class="amount-btn">$200</button>
+              <button class="amount-btn">$300</button>
+            </div>
+            <button class="cart">
+              Add to cart
+              <ion-icon name="lock-closed-outline" class="cart-icon"></ion-icon>
+            </button>
           </div>
-          <div class="amounts">
-            <button class="amount-btn">$25</button>
-            <button class="amount-btn">$50</button>
-            <button class="amount-btn">$75</button>
-            <button class="amount-btn">$100</button>
-            <button class="amount-btn active">$200</button>
-            <button class="amount-btn">$300</button>
-          </div>
-          <button class="cart">
-            Add to cart
-            <ion-icon name="lock-closed-outline" class="cart-icon"></ion-icon>
-          </button>
-        </div>
+        </form>
 
         <img src="./images/gift.png" alt="gift" class="gift" />
         <ion-icon name="close-outline" class="close-icon"></ion-icon>
