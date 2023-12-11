@@ -4,6 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iCodeMas-11</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <section class="section-feedback">
+      <div class="container">
+        <h1 class="heading-primary">Gift the joy of choice</h1>
+        <p class="feedback-para">
+          Show them you care with a gift they'll love. With an online gift card,
+          they can choose from a wide selection of products.
+        </p>
+        <div class="amount">
+          <div class="amount-selected">
+            <button class="min">-</button>
+            <input
+              type="text"
+              required
+              class="cost-input active"
+              value="$200"
+            />
+            <button class="add">+</button>
+          </div>
+          <div class="amounts">
+            <button class="amount-btn">$25</button>
+            <button class="amount-btn">$50</button>
+            <button class="amount-btn">$75</button>
+            <button class="amount-btn">$100</button>
+            <button class="amount-btn active">$200</button>
+            <button class="amount-btn">$300</button>
+          </div>
+          <button class="cart">
+            Add to cart
+            <ion-icon name="lock-closed-outline" class="cart-icon"></ion-icon>
+          </button>
+        </div>
+
+        <img src="./images/gift.png" alt="gift" class="gift" />
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
