@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeMas-13</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section class="section-va">
+      <div class="container">
+        <div class="va-section">
+          <div class="va">
+            <h1 class="heading-primary">Virtual assistant</h1>
+            <p class="va-desc">
+              Our virtual assistant is ready to assist you, making your online
+              experience seamless and enjoyable
+            </p>
+          </div>
+          <div class="chat-section">
+            <div class="va-chat-section">
+              <figure class="va-profile">
+                <img src="./images/tiny_santa.png" alt="va-profile pic" />
+              </figure>
+              <div class="va-chats">
+                <p class="va-chat">Hi there, my child!</p>
+                <p class="va-chat">What can I help you with?</p>
+                <p class="va-chat-detail">Santa Klaus, 7 minutes ago</p>
+              </div>
+            </div>
+            <div class="customer-chat-section">
+              <p class="customer-chat">Hello, Santa!</p>
+              <p class="customer-chat">
+                I'd like to know when you'll bring my gift?
+              </p>
+            </div>
+          </div>
+          <form class="customer-input-chat">
+            <input
+              type="text"
+              placeholder="What can I help you with?"
+              autofocus
+              id="user-input"
+            />
+            <button class="chat-icon" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+            </button>
+          </form>
+        </div>
+        <ion-icon
+          name="chevron-down-outline"
+          class="va-interaction-btn"
+        ></ion-icon>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
