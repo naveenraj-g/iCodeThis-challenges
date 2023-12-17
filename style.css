@@ -26,6 +26,7 @@ body {
   background: var(--clr-2);
   font-family: sans-serif;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 .heading-primary {
