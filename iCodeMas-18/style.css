@@ -124,6 +124,7 @@ img {
   padding: 0.6rem 0.8rem;
   border: none;
   background-color: var(--tree-color);
+  cursor: pointer;
 }
 
 @media (max-width: 840px) {
