@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeMas-19</title>
+    <link rel="stylesheet" href="./sytle.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section class="section-cta">
+      <div class="container">
+        <form class="cta-form">
+          <h1 class="heading-primary">Contact info</h1>
+          <div class="input-fields">
+            <label for="email"
+              >Email <span class="required-field">*</span></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="email"
+              required
+              placeholder="123@gmail.com"
+            />
+          </div>
+
+          <h1 class="heading-primary">Shipping info</h1>
+          <div class="input-fields">
+            <label for="userName"
+              >Name <span class="required-field">*</span></label
+            >
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              required
+              placeholder="Enter name"
+            />
+          </div>
+
+          <div class="input-fields">
+            <label for="country"
+              >Country / Region <span class="required-field">*</span></label
+            >
+            <input
+              type="text"
+              name="country"
+              id="country"
+              required
+              placeholder="Enter country"
+            />
+          </div>
+
+          <div class="input-fields">
+            <label for="userName"
+              >Address <span class="required-field">*</span></label
+            >
+            <input
+              type="text"
+              name="address"
+              id="address"
+              required
+              placeholder="Enter address"
+            />
+          </div>
+
+          <div class="payment-container">
+            <h1 class="heading-primary">Payment info</h1>
+            <div class="payment">
+              <button class="payment-type">Card</button>
+              <button class="payment-type">Cash at arrival</button>
+              <button class="payment-type">Paypal</button>
+            </div>
+          </div>
+
+          <div class="input-fields">
+            <label for="cardNum"
+              >Card number <span class="required-field">*</span></label
+            >
+            <input
+              type="text"
+              required
+              class="cardNum"
+              id="cardNum"
+              placeholder="0044 1234 5678 9012"
+            />
+          </div>
+
+          <div class="input-fields card-details">
+            <div class="exp-date details">
+              <label for="expDate"
+                >Expiry date <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                class="expDate"
+                id="expDate"
+                required
+                placeholder="MM / YY"
+              />
+            </div>
+
+            <div class="cvc details">
+              <label for="cvcNum"
+                >CVC lab <span class="required-field">*</span></label
+              >
+              <input
+                type="password"
+                name="cvcNum"
+                id="cvcNum"
+                required
+                placeholder="123"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="order-btn">Place order</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
