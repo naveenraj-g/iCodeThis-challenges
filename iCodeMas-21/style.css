@@ -47,6 +47,11 @@ body {
   border: 1px solid rgb(218, 216, 216);
   margin-bottom: 0.8rem;
   padding: 1.6rem;
+  background-color: #f9fbfc;
+}
+
+.faq-active {
+  background-color: transparent;
 }
 
 .question {

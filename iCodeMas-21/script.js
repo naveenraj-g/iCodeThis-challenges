@@ -10,6 +10,7 @@ openCloseIcon.forEach((iconCloseOpen) => {
         const ansDiv = parentEle.querySelector(".answer");
         const answer = ansDiv.querySelector(".ans");
 
+        parentEle.classList.toggle("faq-active");
         clickedIcon.classList.toggle("close-icon");
         ansDiv.classList.toggle("active-height");
         answer.classList.toggle("active");
