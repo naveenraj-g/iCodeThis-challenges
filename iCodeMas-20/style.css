@@ -9,11 +9,12 @@ html {
 }
 
 body {
+  min-height: 100vh;
   background-color: #eaf4fc;
   color: #000;
   font-family: sans-serif;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ul > li {
