@@ -12,8 +12,8 @@
       <h1 class="logo">iCodeMas</h1>
       <nav class="nav">
         <ul class="nav-items">
-          <li class="nav-item">
-            <input type="text" class="search-bar" />
+          <li class="search-item">
+            <input type="text" class="search-bar" placeholder="Search" />
             <ion-icon name="search-outline" class="search-icon"></ion-icon>
           </li>
 
@@ -26,10 +26,35 @@
           </li>
         </ul>
       </nav>
-      <ion-icon name="bag-outline"></ion-icon>
-      <div></div>
+      <div class="cart">
+        <ion-icon name="bag-outline" class="cart-icon"></ion-icon>
+      </div>
     </header>
 
+    <section class="section-products">
+      <div class="container">
+        <div class="products-container"></div>
+      </div>
+
+      <div class="cart-container">
+        <h2 class="cart-heading">Your Cart</h2>
+        <div class="cart-items"></div>
+
+        <div class="checkout-cta">
+          <div class="total-container">
+            <h2 class="total-heading">Subtotal</h2>
+            <p class="total-price">$99.99</p>
+          </div>
+          <div class="proceed">
+            Proceed to checkout
+            <ion-icon
+              name="arrow-forward-outline"
+              class="proceed-btn-icon"
+            ></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
