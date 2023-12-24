@@ -1,0 +1,101 @@
+:root {
+  --body-bg: #5b6979;
+  --container-bg: #eaf4fc;
+  --1st-btn-bg: #fff;
+  --2nd-btn-bg: #227393;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--body-bg);
+  color: #000;
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+}
+
+img {
+  width: 5rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 3.2rem;
+  display: flex;
+  background-color: var(--container-bg);
+  align-items: center;
+  justify-content: center;
+  gap: 8.8rem;
+  padding: 2.6rem 4.4rem;
+  flex-wrap: wrap;
+}
+
+.cookie {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.cookie-desc {
+  font-size: 1.4rem;
+}
+
+.cookie-btns {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 1.4rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 100rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:nth-child(1) {
+  background-color: var(--1st-btn-bg);
+}
+
+.btn:nth-child(2) {
+  background-color: var(--2nd-btn-bg);
+  color: var(--1st-btn-bg);
+}
+
+@media (max-width: 1140px) {
+  .container {
+    gap: 2.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .cookie {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 280px) {
+  html {
+    font-size: 40%;
+  }
+}
