@@ -1,0 +1,251 @@
+:root {
+  --body-bg: #f3f5f7;
+  --card-bg: #fff;
+  --card-color: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--body-bg);
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: grid;
+  place-content: center;
+  color: var(--card-color);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+figure {
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 1.4rem;
+}
+
+.container {
+  max-width: 105rem;
+  margin: 3.2rem;
+  padding: 0 3.2rem;
+}
+
+.card-1 {
+  margin-bottom: 4.8rem;
+}
+
+.card-1-content-wrapper {
+  border-radius: 1.8rem;
+  width: 60%;
+  padding: 1.6rem;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+  background-color: var(--card-bg);
+  position: relative;
+  margin-left: 16rem;
+  max-width: 63rem;
+}
+
+.card-1-fig {
+  width: 18rem;
+  height: 15rem;
+}
+
+.heading-primary {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  margin-bottom: 1.2rem;
+}
+
+.card-1-h1 {
+  width: 75%;
+  font-size: 2rem !important;
+}
+
+.author {
+  font-size: 1.4rem;
+}
+
+.author-name {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bookmark {
+  cursor: pointer;
+  position: absolute;
+  top: 14%;
+  right: 4%;
+  font-size: 2.8rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 2fr;
+  gap: 4.2rem;
+}
+
+.card-2 {
+  padding: 1.6rem;
+  background-color: var(--card-bg);
+  border-radius: 1.8rem;
+  text-align: center;
+  max-width: 34.7rem;
+}
+
+.card-2-fig {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 2.4rem;
+}
+
+.card-2-desc {
+  padding: 1.8rem;
+}
+
+.card-desc {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.card-2-btn {
+  margin-top: 3.4rem;
+  background-color: var(--card-color);
+  border: none;
+  padding: 2rem 7.4rem;
+  border-radius: 1rem;
+  color: var(--card-bg);
+  cursor: pointer;
+}
+
+.card-3 {
+  padding: 3.4rem;
+  background-color: var(--card-bg);
+  border-radius: 1.6rem;
+  max-width: 66.1rem;
+}
+
+.card-fig {
+  display: flex;
+  gap: 1.4rem;
+  margin-bottom: 2.8rem;
+}
+
+.card-3 {
+  height: fit-content;
+  margin-top: 6rem;
+}
+
+.card-3-fig {
+  border-radius: 1.4rem 0 0 1.4rem;
+  height: 15rem;
+  max-width: 15rem;
+  flex-grow: 0;
+}
+
+.card-3-fig:nth-child(2) {
+  max-width: 32rem;
+  flex-grow: 1;
+  border-radius: 0;
+}
+
+.card-3-fig:nth-child(3) {
+  border-radius: 0 1.4rem 1.4rem 0;
+}
+
+@media (max-width: 1000px) {
+  .card-grid {
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+
+  .card-3 {
+    margin-top: 0;
+  }
+
+  .card-1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-1-content-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  html {
+    font-size: 55%;
+  }
+
+  .card-1-h1 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 590px) {
+  html {
+    font-size: 45%;
+  }
+
+  .card-1 {
+    margin-bottom: 2.4rem;
+  }
+
+  .card-grid {
+    gap: 2.4rem;
+  }
+
+  .card-3 {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .card-fig {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    column-gap: 1.8rem;
+  }
+
+  .card-3-fig {
+    max-width: 100% !important;
+    border-radius: 1.4rem !important;
+  }
+
+  .card-3-fig:nth-child(1) {
+    grid-column: 1/ -1;
+  }
+
+  .card-1-fig {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 38%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 32%;
+  }
+}
