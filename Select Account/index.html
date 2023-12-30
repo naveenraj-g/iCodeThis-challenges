@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Account</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-desc">
+        <h1 class="heading-primary">Select your profile</h1>
+        <p class="desc">
+          Logged in users can view full business profile and can save contact
+          details.
+        </p>
+      </div>
+
+      <div class="logged-profiles">
+        <div class="profiles-container">
+          <div class="profile-box">
+            <div class="profile">
+              <figure class="img-box">
+                <img
+                  src="../Product Comps/images/profile-pic.jpg"
+                  alt="profile-pic"
+                />
+              </figure>
+              <p class="profile-name">Andrew Robinson</p>
+              <ion-icon
+                name="ellipsis-horizontal"
+                class="profile-control-icon"
+              ></ion-icon>
+              <div class="profile-control">
+                <p class="edit">
+                  <ion-icon name="create-outline"></ion-icon> Edit
+                </p>
+                <p class="delete">
+                  <ion-icon name="trash-bin-outline"></ion-icon> Delete
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-box">
+            <div class="profile">
+              <figure class="img-box">
+                <img src="./images/profile-2.jpg" alt="profile-pic" />
+              </figure>
+              <p class="profile-name">Mary Kyles</p>
+              <ion-icon
+                name="ellipsis-horizontal"
+                class="profile-control-icon"
+              ></ion-icon>
+              <div class="profile-control">
+                <p class="edit">
+                  <ion-icon name="create-outline"></ion-icon> Edit
+                </p>
+                <p class="delete">
+                  <ion-icon name="trash-bin-outline"></ion-icon> Delete
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ion-icon name="add-outline" class="add-profile-icon"></ion-icon>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
