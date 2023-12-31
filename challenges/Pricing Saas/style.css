@@ -1,0 +1,321 @@
+:root {
+  --body-bg: #191b1d;
+
+  --current-plan-bg: #bc1f4b;
+  --current-plan-color: #fff5f4;
+  --current-plan-color-sub: #f9daec;
+
+  --plan-color: #fcfffe;
+  --pro-before: #a31345;
+  --plan-bg: #22262b;
+  --plan-option-color: #d2d4d6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-bg);
+  color: var(--plan-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.section-pricing {
+  margin: 0 3.4rem 3.4rem 3.4rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+/* Current plan */
+.current-plan-container {
+  text-align: center;
+  margin-bottom: 10.8rem;
+}
+
+.current-plan {
+  background-color: var(--current-plan-bg);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1.8rem 6.8rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.current-plan > p {
+  font-size: 1.3rem;
+  color: var(--current-plan-color-sub);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.current-plan > h3 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+/* month - anually TOGGLE */
+.plan-toggle {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.heading-primary {
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.bill-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.bill-type > p {
+  font-size: 1.15rem;
+  color: var(--plan-option-color);
+  letter-spacing: 0.05rem;
+}
+
+.toggle-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-bar {
+  width: 4%;
+  border-radius: 100rem;
+  background-color: var(--current-plan-bg);
+  padding: 1.2rem 2.4rem;
+  position: relative;
+}
+
+.toggle-ball {
+  position: absolute;
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  background-color: var(--current-plan-color);
+  top: 10%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.toggle-ball-left {
+  transform: translateX(19%);
+}
+
+.toggle-ball-right {
+  transform: translateX(140%);
+}
+
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+
+.plan-card {
+  background-color: var(--plan-bg);
+  width: 100%;
+  padding: 3.4rem 3.2rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.plan-card > h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.6rem;
+}
+
+.plan-card .cost {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+.plan-card .cost span {
+  font-size: 1.8rem;
+}
+
+.plan-card .enterprise-heading {
+  font-size: 2.8rem;
+  margin-top: 2.8rem;
+}
+
+.plan-card .pro-maus {
+  width: 100%;
+  padding: 1.6rem 3.2rem 1.6rem 4.4rem;
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+  background: var(--plan-bg);
+  color: var(--plan-option-color);
+  border: 0.2rem solid #4a4d53;
+  outline: none;
+  appearance: none;
+  border-radius: 0.5rem;
+}
+
+.relat {
+  position: relative;
+}
+
+.relat > ion-icon {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  color: #4a4d53;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-25%);
+}
+
+.pro > p {
+  color: var(--pro-before);
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 0.4rem;
+  margin-left: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.plan-card .pro-maus option {
+  color: var(--plan-option-color);
+}
+
+.plan-desc {
+  text-align: left;
+  list-style: none;
+  color: var(--plan-option-color);
+  font-size: 1.28rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.plan-desc li::before {
+  content: "\2022";
+  color: var(--current-plan-bg);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.8rem;
+  margin-right: -0.5rem;
+}
+
+.plan-card a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--current-plan-color);
+  font-size: 1.6rem;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.1rem var(--current-plan-bg);
+  padding: 1.2rem 3.8rem;
+  border-radius: 0.3rem;
+  margin-top: 4rem;
+  transition: all 0.4s;
+}
+
+.plan-card a:hover {
+  background-color: var(--current-plan-bg);
+}
+
+.plan-card.pro a {
+  background-color: var(--current-plan-bg);
+}
+
+.plan-card.pro {
+  box-shadow: inset 0 0 0 0.2rem var(--current-plan-bg);
+}
+
+.plan-card:hover {
+  box-shadow: inset 0 0 0 0.2rem var(--current-plan-bg);
+}
+
+.plan-card.starter .plan-desc {
+  margin-top: 5.4rem;
+}
+
+.plan-card.starter {
+  padding: 3.4rem 6rem;
+}
+
+.plan-card.enterprise .plan-desc {
+  margin-top: 9.6rem;
+}
+
+.plan-card.enterprise {
+  padding: 3.4rem 5.4rem;
+}
+
+/* @media (max-width: 65em) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+@media (max-width: 65em) {
+  html {
+    font-size: 60%;
+  }
+
+  .plans-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plan-card.enterprise {
+    grid-column: span 2;
+  }
+
+  .plan-card {
+    max-width: 32rem;
+  }
+
+  .plan-card.starter {
+    justify-self: end;
+  }
+
+  .plan-card.pro {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 44em) {
+  .plans-container {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-card.enterprise {
+    grid-column: auto;
+  }
+
+  .plan-card.starter {
+    justify-self: center;
+  }
+
+  .plan-card.pro {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 23em) {
+  html {
+    font-size: 45%;
+  }
+}

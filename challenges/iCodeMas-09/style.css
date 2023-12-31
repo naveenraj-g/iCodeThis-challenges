@@ -1,0 +1,83 @@
+:root {
+  --main-btn-bg: #e5e8ee;
+  --list-hover-bg: #eff3f6;
+  --color: #1d2028;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--color);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 100rem;
+  text-align: left;
+  width: 100%;
+}
+
+.container {
+  width: 23rem;
+}
+
+.most-recent {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-btn-bg);
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+ion-icon {
+  font-size: 1.8rem;
+  transition: transform 0.3s;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.drop-down {
+  margin-top: 0.4rem;
+  overflow: hidden;
+}
+
+.hidden-div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--list-hover-bg);
+  border-radius: 2rem;
+  transform: translateY(-21rem);
+  transition: transform 0.3s;
+}
+
+.hidden-div > button {
+  transition: background-color 0.4s;
+}
+
+.hidden-div > button:hover {
+  background-color: var(--list-hover-bg);
+}
+
+.hidden-div.active {
+  transform: translateY(0);
+}

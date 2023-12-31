@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Cookies</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="cookie-container">
+          <figure>
+            <img src="./images/cookie.png" alt="cookie-image" />
+          </figure>
+          <div class="cookie-content">
+            <p>
+              We use cookies to ensure that we give you the best experience on
+              our website. Read our
+              <span class="cookie-statement"
+                ><a href="#">Privacy Statement</a></span
+              >.
+            </p>
+            <div class="btn">
+              <button class="dis-agree">I disagree</button>
+              <button class="agree">I agree</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <figure>
+            <img src="./images/mail-box.png" alt="mail-box-image" />
+          </figure>
+          <div class="cta-content">
+            <h3 class="cta-heading">Join Our Newsletter</h3>
+            <p class="newsletter-desc">
+              Get the latest articles, freebies, jobs and special offers
+              delivered directly to your inbox.
+            </p>
+            <form class="cta-form">
+              <input
+                type="text"
+                class="cta-input"
+                placeholder="Email address"
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+            <p class="user-confirm">
+              Yes, I would like to receive communications by email.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const form = document.querySelector(".cta-form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeMas-20</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="section-header">
+      <h1 class="logo">iCodeMas</h1>
+      <nav class="nav">
+        <ul class="nav-items">
+          <li class="search-item">
+            <input type="text" class="search-bar" placeholder="Search" />
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+          </li>
+
+          <li class="nav-item">
+            <ul class="nav-cta-con">
+              <li class="nav-cta">Featured</li>
+              <li class="nav-cta">Shop</li>
+              <li class="nav-cta">FAQ</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <ion-icon name="bag-outline" class="cart-icon"></ion-icon>
+      </div>
+    </header>
+
+    <section class="section-products">
+      <div class="container">
+        <div class="products-container"></div>
+      </div>
+
+      <div class="cart-container">
+        <h2 class="cart-heading">Your Cart</h2>
+        <div class="cart-items"></div>
+
+        <div class="checkout-cta">
+          <div class="total-container">
+            <h2 class="total-heading">Subtotal</h2>
+            <p class="total-price">$99.99</p>
+          </div>
+          <div class="proceed">
+            Proceed to checkout
+            <ion-icon
+              name="arrow-forward-outline"
+              class="proceed-btn-icon"
+            ></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
