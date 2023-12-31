@@ -1,0 +1,193 @@
+:root {
+  --body-bg: #f9f4f8;
+  --background-card-bg: #f4eff5;
+  --card-bg: #fff;
+  --btn-bg: #a20062;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  color: #000;
+  background-color: var(--body-bg);
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  background-color: var(--card-bg);
+  max-width: 34rem;
+  padding: 3.4rem 4.8rem;
+  border-radius: 1rem;
+  box-shadow: -0.2rem 0.2rem 1.4rem 0.1rem rgb(235, 202, 241, 0.4);
+  position: relative;
+  margin: 3.2rem;
+}
+
+.container::before {
+  content: "";
+  background-color: var(--background-card-bg);
+  inset: 20rem -30%;
+  border-radius: 1.2rem;
+  bottom: -12%;
+  position: absolute;
+  z-index: -1;
+}
+
+.profile-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-profile-img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid var(--background-card-bg);
+  margin-bottom: 1rem;
+}
+
+.invite {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.channel-name {
+  margin-bottom: 1.2rem;
+}
+
+.channel-info {
+  background-color: var(--body-bg);
+  padding: 0.6rem 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.info-details {
+  display: flex;
+  gap: 0.2rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.info-details li:nth-child(2) {
+  font-size: 1.8rem;
+}
+
+.input {
+  margin-bottom: 1.8rem;
+}
+
+.username {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.input-username {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.user-agreement {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.user-agreement > input {
+  opacity: 1;
+  position: relative;
+}
+
+.user-agreement > input::before {
+  content: "✔";
+  position: absolute;
+  padding: 0rem 0.4rem;
+  font-size: 1.6rem;
+  /* border: 2px solid #a20062; */
+  background-color: #a20062;
+  color: #a20062;
+  top: 0;
+  left: 0;
+}
+
+.user-agreement > input:checked::before {
+  color: #fff;
+}
+
+.user-agreement > label {
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.user-agreement > label > a {
+  color: var(--btn-bg);
+  text-decoration: underline;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+  border: none;
+  color: #fff;
+  background-color: var(--btn-bg);
+  cursor: pointer;
+  margin-bottom: 2.8rem;
+}
+
+.existing-account {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.existing-account > a {
+  color: #a20062;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .container::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    padding: 1.8rem 2.4rem;
+  }
+}
