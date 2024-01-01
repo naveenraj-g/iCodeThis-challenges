@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage Plans</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="storage-container">
+        <div class="title">
+          <button class="back-btn">
+            <ion-icon
+              name="arrow-back-outline"
+              class="back-btn-icon"
+            ></ion-icon>
+          </button>
+          <h2 class="heading-secondary">Total storage</h2>
+        </div>
+        <div class="storage-details">
+          <div class="pi-chart-con">
+            <div class="pi-chart"></div>
+          </div>
+          <div class="storage-detail">
+            <h3 class="size total-size">30 GB</h3>
+            <h4 class="size-desc total-size">Total storage</h4>
+
+            <h3 class="size used-size">3.6 GB</h3>
+            <h4 class="size-desc used-size">10% used</h4>
+
+            <button class="details-btn">View details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="plans-container">
+        <div class="plan current-plan">
+          <div class="line-design cur"></div>
+          <h1 class="plan-size cur-size">30 GB</h1>
+          <p class="cur-pln">Current plan</p>
+          <div class="border-div cur-div-1">
+            <div class="bor-1 div-1">
+              <div class="bor-2 div-1"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan other-plan">
+          <div class="plan-detail">
+            <div class="line-design mon"></div>
+            <h1 class="plan-size">100 GB</h1>
+            <div class="border-div cur-div-2">
+              <div class="bor-1">
+                <div class="bor-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mon-year-cost">
+            <button class="mon-btn">NOK 17.00 / month</button>
+            <a href="#">Or prepay anually NOK 170.00 / year</a>
+          </div>
+        </div>
+
+        <div class="plan other-plan">
+          <div class="plan-detail">
+            <div class="line-design year"></div>
+            <h1 class="plan-size">1 TB</h1>
+            <div class="border-div cur-div-2">
+              <div class="bor-1">
+                <div class="bor-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mon-year-cost">
+            <button class="mon-btn">NOK 89.00 / month</button>
+            <a href="#">Or prepay anually NOK 899.00 / year</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
