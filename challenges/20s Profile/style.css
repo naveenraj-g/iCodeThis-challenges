@@ -1,0 +1,83 @@
+:root {
+  --body-bg: #0a3980;
+  --card-bg: #0d47a1;
+  --btn-bg: #ffca26;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--body-bg);
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure {
+  max-width: 45rem;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 3.2rem;
+  margin-right: 5.2rem;
+}
+
+.profile-desc {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.details {
+  background-color: var(--card-bg);
+  padding: 3.8rem 2.8rem;
+  color: #fff;
+}
+
+p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.follow {
+  background-color: var(--btn-bg);
+  border: none;
+  padding: 2.4rem 2rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 370px) {
+  html {
+    font-size: 45%;
+  }
+}
