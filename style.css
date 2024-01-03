@@ -90,3 +90,9 @@ body {
     --gradient-angle: 360deg;
   }
 }
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+}
