@@ -27,6 +27,7 @@ body {
 
 .container {
   max-width: 38rem;
+  margin: 3.2rem;
 }
 
 .notify {
@@ -159,4 +160,22 @@ img {
 
 .item-name {
   font-size: 1.8rem;
+}
+
+@media (max-width: 410px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 35%;
+  }
 }
