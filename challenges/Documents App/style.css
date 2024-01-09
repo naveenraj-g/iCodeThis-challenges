@@ -1,0 +1,162 @@
+:root {
+  --body-bg: #f7fbfe;
+  --notify-bg-1: #4b9bd4;
+  --notify-bg-2: #83d4e4;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--body-bg);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 38rem;
+}
+
+.notify {
+  background: linear-gradient(to right, var(--notify-bg-1), var(--notify-bg-2));
+  color: #fff;
+  padding: 2rem 4.8rem;
+  border-radius: 0.4rem;
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+.notify-desc {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.notify-desc-span {
+  font-weight: bold;
+}
+
+.notify-close-icon {
+  position: absolute;
+  top: 6%;
+  right: 1%;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.doc-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.card-title-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  font-weight: lighter;
+}
+
+.add-new-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0.4rem 1.2rem;
+  background-color: transparent;
+  border-radius: 100rem;
+  border: 2px solid var(--notify-bg-1);
+  color: #4b9bd4;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-new-btn > ion-icon {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.input-con {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.4rem 3.8rem;
+  border: 1px solid #a1a1a1;
+  border-radius: 0.6rem;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  font-size: 2.4rem;
+  left: 3%;
+  top: 48%;
+  color: #858585;
+  transform: translateY(-48%);
+}
+
+img {
+  width: 2.8rem;
+  height: auto;
+  display: block;
+}
+
+.document-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-img {
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.word {
+  background-color: #f7fbff;
+  border: 2px solid #c5e2ff;
+}
+
+.office {
+  background-color: #fff5f5;
+  border: 2px solid #ffe0e0;
+}
+
+.adobe {
+  background-color: rgb(252, 243, 229);
+  border: 2px solid rgb(255, 224, 168);
+}
+
+.item-name {
+  font-size: 1.8rem;
+}
