@@ -143,6 +143,7 @@ body {
 
 .select-btn:hover {
   background-color: var(--card-btn-bg);
+  border: 2px solid var(--card-btn-bg);
   color: #fff;
 }
 
