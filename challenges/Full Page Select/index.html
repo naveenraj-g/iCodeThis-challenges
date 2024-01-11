@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Page Select</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="select">
+        <div class="select-text">
+          <h1 class="heading-primary">Select category</h1>
+          <p class="select-desc">
+            Select the category where you want to add these records.
+          </p>
+          <span class="select-bg-text">2/3</span>
+        </div>
+        <button class="add-btn">
+          <ion-icon name="add-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="category-cards">
+        <div class="cards">
+          <div class="card">
+            <figure class="category-img">
+              <img src="./images/plants.jpg" alt="plant" />
+            </figure>
+            <h2 class="heading-secondary">Plants</h2>
+            <button class="select-btn">Select</button>
+          </div>
+          <div class="card">
+            <figure class="category-img">
+              <img src="./images/dessert.jpg" alt="dessert" />
+            </figure>
+            <h2 class="heading-secondary">Desserts</h2>
+            <button class="select-btn">Select</button>
+          </div>
+          <div class="card">
+            <figure class="category-img">
+              <img src="./images/accessories.jpg" alt="accessories" />
+            </figure>
+            <h2 class="heading-secondary">Accessories</h2>
+            <button class="select-btn">Select</button>
+          </div>
+        </div>
+        <button class="continue-btn">
+          Continue <ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <div class="half-bg"></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
