@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Header UI</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg1: "#BF80FB",
+              bg2: "#FC6B9C",
+              inputColor: "#BC61B4",
+              whi: "rgb(255,255,255,0.8)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-white relative overflow-hidden min-h-screen">
+    <div class="bg-gradient-to-r from-bg1 to-bg2 min-h-screen w-full">
+      <nav
+        class="px-2 sm:px-6 flex justify-between items-center max-w-7xl mx-auto gap-2"
+      >
+        <h1
+          class="text-l text-slate-100 py-4 cursor-pointer hover:text-white ease-in duration-300 sm:text-xl"
+        >
+          UIDesignDaily
+        </h1>
+        <div
+          class="h-fit flex flex-col justify-start self-start items-center py-1 px-4 border-[0.5px] border-gray-300 rounded-b-lg border-t-[0px] mr-[4rem] md:ml-[10rem] md:mr-0"
+          id="days-count"
+        >
+          <p class="uppercase text-[0.7rem] text-gray-200">day</p>
+          <p class="text-md font-bold">905</p>
+        </div>
+        <!-- class="flex py-4 gap-8 text-base text-gray-200 ease-in duration-300 md:hidden" -->
+        <!-- hover:text-white ease-in duration-300 -->
+        <ul
+          class="flex flex-col px-4 gap-8 text-2xl text-black absolute inset-0 justify-start items-center pt-[10rem] bg-whi translate-x-full ease-in duration-300 transition-transform md:flex-row md:px-0 md:py-4 md:text-base md:text-gray-200 md:relative md:inset-auto md:pt-[0rem] md:bg-transparent md:translate-x-0"
+          id="nav-res"
+        >
+          <li class="cursor-pointer md:hover:text-white ease-in duration-300">
+            Design
+          </li>
+          <li class="cursor-pointer md:hover:text-white ease-in duration-300">
+            About
+          </li>
+          <li class="cursor-pointer md:hover:text-white ease-in duration-300">
+            License
+          </li>
+          <li class="cursor-pointer md:hover:text-white ease-in duration-300">
+            Contact
+          </li>
+        </ul>
+        <ion-icon
+          name="reorder-three-outline"
+          class="text-4xl cursor-pointer text-slate-100 relative z-10 md:hidden shrink-0"
+          id="nav-res-btn"
+        ></ion-icon>
+      </nav>
+
+      <div
+        class="flex flex-col items-center mt-10 max-w-5xl mx-auto text-center px-5"
+      >
+        <p class="text-[.66rem] text-gray-200 uppercase mb-0.5">
+          don't miss out the latest
+        </p>
+        <h2 class="text-l mb-4 tracking-wide sm:text-xl">
+          Weekly FREE UI resources straight to your index
+        </h2>
+        <form class="flex items-center flex-wrap justify-center gap-2 mb-2">
+          <input
+            type="email"
+            class="bg-inputColor text-base rounded py-1 px-3 placeholder:text-gray-300 outline-none"
+            placeholder="Email address"
+          />
+          <button
+            class="text-[0.89rem] cursor-pointer border-[0.5px] border-gray-300 rounded py-1 px-3"
+            type="submit"
+          >
+            Stay inspired
+          </button>
+        </form>
+        <p class="text-xs text-gray-300">
+          Commitment issues? Unsubscribe at any time.
+        </p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

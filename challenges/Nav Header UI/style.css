@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+.nav-res {
+  transform: translateX(0) !important;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 85%;
+  }
+  #days-count {
+    margin: 0;
+    margin-left: -3rem;
+  }
+}
