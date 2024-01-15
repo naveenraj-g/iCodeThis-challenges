@@ -1,0 +1,23 @@
+@media (max-width: 375px) {
+  #zip-input {
+    margin-bottom: 0.6rem;
+  }
+
+  #search-icon {
+    bottom: 20%;
+  }
+}
+
+#container {
+  position: relative;
+}
+
+#container::before {
+  position: absolute;
+  content: "";
+  background: #eae8ff;
+  inset: -2.5rem;
+  bottom: 3rem;
+  border-radius: 3rem;
+  z-index: -1;
+}
