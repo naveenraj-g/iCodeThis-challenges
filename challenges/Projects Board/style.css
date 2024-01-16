@@ -186,7 +186,7 @@ button {
 
 .header__profile-btn {
   font-size: var(--size-xs);
-  padding: 0.6rem 0.5rem;
+  padding: 0.5rem;
   border-radius: 50%;
   background-color: #e95580;
   color: var(--clr-slate100);
