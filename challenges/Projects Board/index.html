@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Board</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="header__nav">
+        <div class="header__menu__container" id="header__menu">
+          <ul class="header__menu">
+            <li><a class="header__link" href="javascript:void(0)">Home</a></li>
+            <li>
+              <a
+                class="header__link header__menu-active"
+                href="javascript:void(0)"
+                >Projects</a
+              >
+            </li>
+            <li class="header__notify">
+              <a class="header__link header__notify" href="javascript:void(0)"
+                >Inbox</a
+              >
+              <span class="header__inbox-notify"></span>
+            </li>
+            <li><a class="header__link" href="javascript:void(0)">Teams</a></li>
+          </ul>
+          <ion-icon
+            name="close"
+            class="header__nav-close-icon"
+            id="nav-close-btn"
+          ></ion-icon>
+        </div>
+        <ion-icon
+          name="menu"
+          class="header__nav-open-icon"
+          id="nav-open-btn"
+        ></ion-icon>
+
+        <ul class="header__account-details">
+          <li><button class="header__upgrade-btn btn">Upgrade</button></li>
+          <li><button class="header__profile-btn btn">JG</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container projects-container">
+      <section class="section-projects">
+        <h2 class="section-projects__heading">projects</h2>
+        <ul class="section-projects__menu">
+          <li class="section-projects__menu-item">
+            <span class="section-projects__menu-item-dot bg-darkyellow"></span>
+            boardme development
+          </li>
+          <li class="section-projects__menu-item">
+            <span class="section-projects__menu-item-dot bg-orange"></span>
+            Feature lists
+          </li>
+          <li class="section-projects__menu-item">
+            <span class="section-projects__menu-item-dot bg-blue"></span>
+            Marketing
+          </li>
+          <li class="section-projects__menu-item">
+            <span class="section-projects__menu-item-dot bg-violet"></span> UIDD
+            development
+          </li>
+          <li class="section-projects__menu-item">
+            <span class="section-projects__menu-item-dot bg-green"></span>
+            Topics
+          </li>
+          <li class="section-projects__menu-item">
+            <span class="section-projects__menu-item-dot bg-pink"></span> Bugs
+            and fixes
+          </li>
+          <li class="section-project__menu-item-viewall">
+            <a href="javascript:void(0)">View all &gt;</a>
+          </li>
+        </ul>
+
+        <h3 class="section-projects-teams">Teams</h3>
+        <article class="try-teams">
+          <h1 class="teams-heading">Need to form a team?</h1>
+          <p class="teams-description">
+            Try our 30 days trial and see what you can achieve together.
+          </p>
+          <button class="teams-try-btn btn">Try it free</button>
+        </article>
+      </section>
+
+      <section class="section-projecs-lists">
+        <div>
+          <h1 class="projecs-heading">Projecs</h1>
+          <div class="projecs-items-container">
+            <div class="projecs-container">
+              <button class="projecs-item-btn btn-darkyellow btn">bd</button>
+              <p class="projecs-title">boardme development</p>
+            </div>
+
+            <div class="projecs-container">
+              <button class="projecs-item-btn btn-orange btn">Fl</button>
+              <p class="projecs-title">Feature lists</p>
+            </div>
+
+            <div class="projecs-container">
+              <button class="projecs-item-btn btn-blue btn">M</button>
+              <p class="projecs-title">Marketing</p>
+            </div>
+
+            <div class="projecs-container">
+              <button class="projecs-item-btn btn-violet btn">Ud</button>
+              <p class="projecs-title">UIDD development</p>
+            </div>
+
+            <div class="projecs-container">
+              <button class="projecs-item-btn btn-green btn">T</button>
+              <p class="projecs-title">Topics</p>
+            </div>
+
+            <div class="projecs-container">
+              <button class="projecs-item-btn btn-pink btn">Bf</button>
+              <p class="projecs-title">Bug and fixes</p>
+            </div>
+
+            <div class="projecs-container">
+              <button class="projecs-item-btn btn-add-projecs btn">
+                <ion-icon name="add" class="add-new-project"></ion-icon>
+              </button>
+              <p class="projecs-title">Add a project</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="privacy-container">
+          <ion-icon name="ellipsis-horizontal" class="privacy__icon"></ion-icon>
+          <p class="privacy">Privacy</p>
+          <button class="question-btn btn">
+            <ion-icon name="help"></ion-icon>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
