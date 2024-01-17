@@ -227,7 +227,6 @@ button {
   flex-direction: column;
   gap: 0.8rem;
   margin-bottom: 2rem;
-  /* min-height: 30vh; */
 }
 
 .section-projects__menu-item {
@@ -284,7 +283,6 @@ button {
 }
 
 /* Teams */
-
 .try-teams {
   background-color: var(--clr-slate700);
   padding: 0.8rem;
