@@ -9,6 +9,8 @@ let timer;
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
+let icon;
+let iconAttr;
 
 function updateRecordingTime() {
     seconds++;
@@ -28,8 +30,8 @@ function updateRecordingTime() {
 }
 
 pauseBtn.addEventListener("click", () => {
-    const icon = pauseBtn.querySelector(".recording-icon");
-    const iconAttr = icon.getAttribute("name");
+    icon = pauseBtn.querySelector(".recording-icon");
+    iconAttr = icon.getAttribute("name");
     if (iconAttr === "play") {
         timer = setInterval(updateRecordingTime, 1000);
     }
@@ -42,6 +44,7 @@ pauseBtn.addEventListener("click", () => {
 });
 
 stopBtn.addEventListener("click", () => {
+    iconAttr === "play" ? pauseBtn.innerHTML = playIcon : "";
     clearInterval(timer);
     seconds = 0;
     minutes = 0;
