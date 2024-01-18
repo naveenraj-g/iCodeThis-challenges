@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recording UI</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container">
+        <div class="card-open-close-con">
+          <div class="card-open-close">
+            <ion-icon name="remove" class="open-close-icon"></ion-icon>
+            <ion-icon name="close" class="open-close-icon"></ion-icon>
+          </div>
+        </div>
+        <section class="recording-section">
+          <h3 class="recording">Recording</h3>
+          <h1 class="recording-time">00:00:00</h1>
+
+          <div class="recording-controls">
+            <h2 class="recording-pause">
+              <ion-icon name="pause" class="recording-icon"></ion-icon> Pause
+            </h2>
+            <h2 class="recording-stop">
+              <ion-icon name="stop" class="recording-icon"></ion-icon> Stop
+            </h2>
+          </div>
+        </section>
+      </div>
+
+      <div class="card-footer">
+        <p class="draw">
+          <ion-icon name="brush" class="draw-icon"></ion-icon> Draw
+        </p>
+        <p class="zoom">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="zoom-in-icon zoom-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="zoom-out-icon zoom-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM13.5 10.5h-6"
+            />
+          </svg>
+          x1
+        </p>
+        <p class="mic">
+          <ion-icon name="mic-off-outline" class="mic-off mic-icon"></ion-icon>
+          <ion-icon name="mic" class="mic-mic mic-icon"></ion-icon>
+          <ion-icon name="volume-mute" class="sound-off mic-icon"></ion-icon>
+        </p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
