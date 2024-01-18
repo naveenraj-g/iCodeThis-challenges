@@ -88,6 +88,7 @@ body {
 
 .recording-pause {
   color: var(--pause-clr);
+  width: 11.8rem;
 }
 
 .recording-stop {
