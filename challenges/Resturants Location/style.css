@@ -1,0 +1,311 @@
+:root {
+  --clr-dark: #070a13;
+  --clr-light: #f1f5f9;
+  --clr-slate100: #f1f5f9;
+  --clr-slate200: #e2e8f0;
+  --clr-slate300: #cbd5e1;
+  --clr-slate400: #94a3b8;
+  --clr-slate500: #64748b;
+  --clr-slate600: #475569;
+  --clr-slate700: #334155;
+  --clr-darkOrange: #dd6e51;
+  --clr-orange: #f48266;
+  --clr-green: #53d85d;
+  --clr-blue: #63b5f6;
+  --clr-gold: #fff574;
+  --clr-bg1: #e8f2ed;
+  --clr-bg2: #d6f1e4;
+
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(199, 97, 60);
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: linear-gradient(to right, var(--clr-bg1), var(--clr-bg2));
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+}
+
+ion-icon {
+  display: block;
+}
+
+.container {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 1.4rem;
+  background-color: var(--clr-orange);
+  overflow: hidden;
+}
+
+.header {
+  background-color: var(--clr-darkOrange);
+  display: flex;
+  padding: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-icon,
+.search-icon {
+  font-size: var(--size-2xl);
+  color: #ffb9aa;
+  cursor: pointer;
+}
+
+.header__title {
+  font-size: var(--size-xl);
+  font-weight: 600;
+  color: #f4e6d9;
+}
+
+.section-restaurants {
+  height: 521px;
+  overflow-y: auto;
+}
+
+.restaurant {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1rem;
+  gap: 0.6rem;
+  cursor: pointer;
+  background-color: var(--clr-orange);
+  border-bottom: 1px solid var(--clr-darkOrange);
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s;
+}
+
+.restaurant:first-child {
+  border-top: 1px solid #db6041;
+}
+
+.restaurant:last-child {
+  border-bottom: none;
+}
+
+.img-con {
+  width: 4rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.food-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-right: 1rem;
+}
+
+.food-name {
+  font-size: var(--size-base);
+  color: #fff7f9;
+  font-weight: 600;
+}
+
+.ratings {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.star {
+  font-size: var(--size-sm);
+}
+
+.star-gold {
+  color: var(--clr-gold);
+}
+
+.food-category {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.category {
+  font-size: 0.6rem;
+  color: #ebebeb;
+  border: 1px solid #ebebeb;
+  border-radius: 1rem;
+  padding: 0 0.4em;
+}
+
+.distance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-weight: bold;
+  stroke: #fff;
+  stroke-width: 0.15rem;
+}
+
+.distance-km {
+  color: #fff;
+  font-weight: bold;
+}
+
+.restaurant-con {
+  position: relative;
+}
+
+.restaurant-cta {
+  position: absolute;
+  background-color: #ffffff;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+.order,
+.bookmark {
+  display: grid;
+  place-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.call-icon,
+.bookmark-icon {
+  font-size: var(--size-2xl);
+}
+
+.call-icon {
+  color: var(--clr-green);
+}
+
+.bookmark-icon {
+  color: var(--clr-blue);
+}
+
+.order-title,
+.bookmark-title {
+  font-size: var(--size-xs);
+  color: var(--clr-slate500);
+}
+
+.restaurant-active {
+  background-color: var(--clr-darkOrange);
+  transform: translateX(-8.5rem);
+}
+
+/* /////////////////////////////////////////// */
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .restaurant {
+    gap: 1rem;
+  }
+
+  .food-details {
+    margin-right: 1.4rem;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
