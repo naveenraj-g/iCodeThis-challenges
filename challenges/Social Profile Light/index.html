@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Profile Light</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="darkmode">
+    <div class="card">
+      <figure class="profile-pic">
+        <img
+          src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="profile picture"
+        />
+      </figure>
+      <h2 class="name">Andrea Piacquadio</h2>
+      <p class="desc">Building next-gen energy tech product at Company</p>
+      <div class="btn-con">
+        <button class="btn">
+          <ion-icon name="person-add-outline"></ion-icon> Follow
+        </button>
+        <button class="btn">
+          <ion-icon name="chatbox-ellipses-outline"></ion-icon> Send message
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const profilEImg = document.querySelector(".profile-pic");
+      profilEImg.addEventListener("click", () => {
+        document.body.classList.toggle("darkmode");
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
