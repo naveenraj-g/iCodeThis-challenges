@@ -1,0 +1,170 @@
+:root {
+  --body-bg: #e9ecf8;
+  --best-val-bg: #3044ef;
+  --btn-bg: #0c1033;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  background-color: var(--body-bg);
+  display: grid;
+  place-items: center;
+  color: var(--btn-bg);
+}
+
+img {
+  width: 5rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.btn {
+  width: 20rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 1.6rem;
+  border-radius: 100rem;
+  font-weight: bold;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.btn-continue {
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--btn-bg);
+  background-color: var(--btn-bg);
+  color: #e7e7e7;
+}
+
+.btn-continue-paypal {
+  border: 1px solid #b3b3b3;
+  background-color: transparent;
+}
+
+.container {
+  background-color: #fff;
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+  margin: 1.8rem;
+  max-width: 50rem;
+}
+
+.container__heading {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.container__desc {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 30ch;
+  line-height: 1.3;
+  margin-bottom: 1.6rem;
+}
+
+.plans-form {
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.plan {
+  border: 2px solid #c9c8c8;
+  padding: 1.8rem;
+  border-radius: 0.4rem;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  position: relative;
+}
+
+.plan > label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.plan-type {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.plan-free-detail {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.plan-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.view-more-offer {
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  text-align: center;
+  color: #3044ef;
+}
+
+.best-plan {
+  font-size: 1.2rem;
+  background-color: var(--best-val-bg);
+  width: fit-content;
+  color: #fff;
+  border-radius: 100rem;
+  padding: 0.2rem 0.8rem;
+}
+
+.radio-tick {
+  position: absolute;
+  font-size: 1.8rem;
+  width: 2.6rem;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--btn-bg);
+  transition: all 0.3s;
+}
+
+input[type="radio"] {
+  opacity: 0;
+}
+
+input[type="radio"]:checked ~ .radio-tick {
+  background-color: var(--btn-bg);
+  color: #fff;
+}
+
+.plan-border {
+  border: 2px solid var(--best-val-bg);
+}

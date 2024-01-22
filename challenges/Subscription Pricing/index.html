@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Pricing</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container__heading">Try FREE for 4 weeks</h1>
+      <p class="container__desc">
+        We uncover the facts around the clock, all over the global.
+      </p>
+      <form class="plans-form">
+        <div class="plans">
+          <div class="plan">
+            <input type="radio" name="plan" id="month" class="radio-btn" />
+            <label for="month">
+              <p class="plan-type">monthly</p>
+              <h3 class="plan-free-detail">4 weeks for free</h3>
+              <p class="plan-price">Then $3 every month for the first year</p>
+            </label>
+            <span class="radio-tick">&#10003;</span>
+          </div>
+
+          <div class="plan plan-border">
+            <input
+              type="radio"
+              name="plan"
+              id="year"
+              class="radio-btn"
+              checked
+            />
+            <label for="year">
+              <p class="best-plan">Best value</p>
+              <p class="plan-type">yearly</p>
+              <h3 class="plan-free-detail">4 weeks for free</h3>
+              <p class="plan-price">Then $30 for the first year</p>
+            </label>
+            <span class="radio-tick">&#10003;</span>
+          </div>
+        </div>
+
+        <button class="btn btn-continue">Continue</button>
+        <button class="btn btn-continue-paypal">
+          <p>Continue with</p>
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/paypal-3.svg"
+            alt="paypal logo"
+          />
+        </button>
+      </form>
+      <a href="javascript:void(0)" class="view-more-offer">View more offers</a>
+    </div>
+  </body>
+</html>
