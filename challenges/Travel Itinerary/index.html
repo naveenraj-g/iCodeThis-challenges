@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Itinerary</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav">
+          <ion-icon
+            name="chevron-back-outline"
+            class="back-nav-icon icon"
+          ></ion-icon>
+          <h1 class="header__nav-title">Bergen - Budapest</h1>
+          <ion-icon
+            name="ellipsis-horizontal"
+            class="more-nav-icon icon"
+          ></ion-icon>
+        </nav>
+      </header>
+
+      <main>
+        <section class="booking-process-section">
+          <div class="progress-completed">
+            <div class="booked stats">
+              <div class="stats-finished">&check;</div>
+              <div class="booking-status">
+                <h2 class="booking-title">Flight booked</h2>
+                <p class="booked-para">Confirmation Code</p>
+                <p class="booked-code">678900</p>
+                <button class="btn btn-mb">show booking summary</button>
+              </div>
+            </div>
+
+            <div class="preparation stats">
+              <div class="stats-finished">&check;</div>
+              <div class="booking-status">
+                <h2 class="booking-title">Preparation</h2>
+                <p class="preparation-para">Priority</p>
+                <button class="btn btn-mb">add services</button>
+              </div>
+            </div>
+
+            <div class="check-in stats">
+              <div class="stats-finished">&check;</div>
+              <div class="booking-status">
+                <h2 class="booking-title">Check-in</h2>
+                <p class="check-in-para">All Passengers Checked-in</p>
+                <div class="check-in-cat">
+                  <span>AG</span>
+                  <span>II</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-line"></div>
+          </div>
+
+          <div class="packing stats">
+            <div class="stats-finished pending-stats"></div>
+            <div class="booking-status">
+              <h2 class="booking-title">Packing</h2>
+              <p class="packing-para">
+                You may upgrade your baggage up to three hours before departure
+              </p>
+              <button class="btn">add baggage</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
