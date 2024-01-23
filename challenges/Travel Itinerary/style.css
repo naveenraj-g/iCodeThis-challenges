@@ -175,7 +175,7 @@ ion-icon {
   position: absolute;
   width: 1.5px;
   inset: 0 auto;
-  top: 0.2rem;
+  top: 0.4rem;
   left: 0.7rem;
   background-color: var(--nav-bg);
 }
