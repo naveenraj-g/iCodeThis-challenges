@@ -5,6 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vertical Landing</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="header__container">
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="nav__items">
+            <li class="nav__item nav__active">
+              <a href="javascript:void(0)" class="nav__link nav__active__link"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)" class="nav__link">Exhibits</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)" class="nav__link">Group Visits</a>
+            </li>
+            <li class="nav__item">
+              <a href="javascript:void(0)" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <ion-icon
+          name="close-outline"
+          class="nav__close-icon nav-toggle-icon"
+        ></ion-icon>
+      </header>
+      <ion-icon
+        name="menu-outline"
+        class="nav__open-icon nav-toggle-icon"
+      ></ion-icon>
+
+      <main class="main">
+        <section class="section-main section-container">
+          <div class="section-header">
+            <figure class="logo-img">
+              <img src="./img/logo.jpg" alt="logo" />
+            </figure>
+            <figure class="indian-flag-img">
+              <img src="./img/Flag_of_India.png" alt="Indian Flag" />
+            </figure>
+          </div>
+
+          <section class="section-hero">
+            <div class="main-title">
+              <h1 class="section-heading">Come to your senses</h1>
+              <button class="section-heading-btn">view our prices</button>
+            </div>
+
+            <div class="image-slider">
+              <figure class="image-slider-img">
+                <img src="./img/img-bg.webp" alt="" />
+              </figure>
+            </div>
+
+            <div class="section-description">
+              <p class="desc">
+                "Not just fun but really cool experience! Lovely stuff, exited
+                to show you it all and lots things to see and try!"
+              </p>
+              <p class="place-name">River of dreams, Florida</p>
+            </div>
+
+            <div class="working-hours">
+              <h2 class="working-hrs-heading">working hours</h2>
+              <div class="timing">
+                <div class="days time1">
+                  <p class="day">Monday - Thursday</p>
+                  <p class="time">10:00 - 22:00</p>
+                </div>
+
+                <div class="days time2">
+                  <p class="day">Friday - Saturday</p>
+                  <p class="time">10:00 - 23:00</p>
+                </div>
+
+                <div class="days time3">
+                  <p class="day">Sunday</p>
+                  <p class="time">10:00 - 22:00</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
