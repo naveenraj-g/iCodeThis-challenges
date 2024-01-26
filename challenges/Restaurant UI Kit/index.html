@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant UI Kit</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="restaurant">
+        <h1 class="heading-primary">Restaurants</h1>
+        <div class="restaurant-details">
+          <figure class="food-img">
+            <img src="./assets/ff.jpg" alt="food image" />
+          </figure>
+          <div class="details">
+            <div class="restaurant-name-ratings">
+              <h4 class="restaurant-name">Clärchens Ballhaus</h4>
+              <div class="rating">
+                <ion-icon name="star" class="rating-icon"></ion-icon>
+                <p>4.5</p>
+              </div>
+            </div>
+            <div class="location">
+              <ion-icon name="location" class="location-icon"></ion-icon>
+              <p>Clärchens Ballhaus Auguststrabe 24 10117 Berlin</p>
+            </div>
+            <div class="open-close-time">
+              <ion-icon name="time-outline" class="clock-icon"></ion-icon>
+              <p class="open-close">
+                <span class="open">Open Now</span> - Close at 2:00 am
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="no-of-people">
+        <div class="people">
+          <div class="people-div">
+            <ion-icon name="people-outline" class="people-icon"></ion-icon>
+            <p class="selected-people-no">4 people</p>
+          </div>
+          <ion-icon name="chevron-up-outline" class="arrow-icon"></ion-icon>
+        </div>
+
+        <div class="active">
+          <ul class="select-people-list">
+            <li class="no-of-people-list">2</li>
+            <li class="no-of-people-list">3</li>
+            <li class="no-of-people-list selected-people-list">4</li>
+            <li class="no-of-people-list">5</li>
+            <li class="no-of-people-list">6</li>
+            <li class="no-of-people-list">7</li>
+            <li class="no-of-people-list">8</li>
+            <li class="no-of-people-list">9</li>
+            <li class="no-of-people-list">10</li>
+            <li class="no-of-people-list">11</li>
+            <li class="no-of-people-list">12</li>
+            <li class="no-of-people-list">13</li>
+            <li class="no-of-people-list">14</li>
+            <li class="no-of-people-list">15</li>
+            <li class="no-of-people-list">16</li>
+            <li class="no-of-people-list">17</li>
+            <li class="no-of-people-list">18</li>
+            <li class="no-of-people-list">19</li>
+            <li class="no-of-people-list">20</li>
+          </ul>
+          <p class="more-than-20">More than 20 people?</p>
+        </div>
+      </div>
+
+      <div class="choose-timing">
+        <div class="timing-heading">
+          <ion-icon name="time-outline" class="clock-icon cl-icon"></ion-icon>
+          <p class="choose-time">Choose a time:</p>
+        </div>
+        <ul class="times-list">
+          <li class="time">8:00 pm</li>
+          <li class="time choosen-timing">8:30 pm</li>
+          <li class="time">9:00 pm</li>
+          <li class="time">9:30 pm</li>
+        </ul>
+      </div>
+      <button class="reserve-confirm-btn">Reserve a Table</button>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

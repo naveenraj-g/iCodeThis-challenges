@@ -1,0 +1,291 @@
+:root {
+  --body-bg: #f6f6f6;
+  --card-clr: #f1f1f1;
+  --primary-clr: #ffb206;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ccc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: grid;
+  place-items: center;
+  color: #e0e0e0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+figure {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ion-icon {
+  display: block;
+}
+
+.container {
+  max-width: 35rem;
+  background-color: #1f2125;
+  padding: 2.4rem;
+  border-radius: 0.6rem;
+  margin: 1rem;
+}
+
+.restaurant {
+  margin-bottom: 1.8rem;
+}
+
+.heading-primary {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.6rem;
+  color: var(--card-clr);
+}
+
+.restaurant-details {
+  display: flex;
+  background-color: var(--body-bg);
+  color: #000;
+  align-items: center;
+  padding: 1.4rem 1rem;
+  border-radius: 0.6rem;
+  gap: 0.8rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.restaurant-name-ratings {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-name {
+  font-size: 1.3rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.rating > p {
+  font-size: 1.2rem;
+}
+
+.rating-icon {
+  font-size: 1.3rem;
+  color: #8d9de7;
+}
+
+.location {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.location-icon {
+  font-size: 1.8rem;
+  color: var(--primary-clr);
+  flex-shrink: 0;
+}
+
+.location > p {
+  font-size: 1.05rem;
+}
+
+.open-close-time {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.clock-icon {
+  font-size: 1.6rem;
+  color: var(--primary-clr);
+  flex-shrink: 0;
+}
+
+.open-close {
+  font-size: 1.05rem;
+}
+
+.open {
+  font-weight: 700;
+}
+
+.no-of-people {
+  margin-bottom: 1.8rem;
+}
+
+.people {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+.people-div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.people-icon {
+  font-size: 1.8rem;
+}
+
+.selected-people-no {
+  font-size: 1.2rem;
+}
+
+.arrow-icon {
+  font-size: 1.8rem;
+  color: var(--primary-clr);
+  transition: all 0.3s;
+}
+
+.select-people-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.4rem 1rem;
+  align-items: center;
+}
+
+.no-of-people-list {
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.selected-people-list {
+  background-color: var(--primary-clr);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.more-than-20 {
+  color: var(--primary-clr);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.choose-timing {
+  margin-bottom: 1.4rem;
+}
+
+.timing-heading {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.cl-icon {
+  font-size: 1.8rem;
+}
+
+.choose-time {
+  font-size: 1.1rem;
+}
+
+.times-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.8rem 1.2rem;
+  gap: 2.2rem;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 1.3rem;
+  border-radius: 100rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+.choosen-timing {
+  background-color: var(--primary-clr);
+  color: #fff;
+}
+
+.reserve-confirm-btn {
+  font-size: 1.4rem;
+  border: 2px solid var(--primary-clr);
+  background-color: var(--primary-clr);
+  color: #fff;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
+  padding: 1.2rem 4.8rem;
+  border-radius: 100rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.reserve-confirm-btn:hover {
+  background-color: transparent;
+  color: var(--primary-clr);
+}
+
+.hidden {
+  height: 0;
+  visibility: hidden;
+}
+
+.arrow-invert {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 45%;
+  }
+}
