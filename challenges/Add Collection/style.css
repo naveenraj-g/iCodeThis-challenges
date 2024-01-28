@@ -1,0 +1,184 @@
+:root {
+  --body-bg: #fdfcff;
+  --card-bg: #fff;
+  --card-clr: #242043;
+  --save-btn-clr1: #c185f6;
+  --save-btn-clr2: #fb6d9d;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-bg);
+  font-family: sans-serif;
+  color: var(--card-clr);
+  display: grid;
+  place-items: center;
+}
+
+ion-icon {
+  display: block;
+}
+
+img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.container {
+  max-width: 60rem;
+  position: relative;
+  margin: 1.8rem;
+  background-color: var(--card-bg);
+  box-shadow: 0 0 1.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  padding: 3.2rem 3.8rem;
+}
+
+.collection__img {
+  max-width: 12rem;
+  height: 8rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.container__heading {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  max-width: 10ch;
+  font-weight: 800;
+  margin-bottom: 2.4rem;
+}
+
+.collections {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 3.4rem;
+}
+
+.collection {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #fdfcff;
+  box-shadow: inset 0 0 0.1rem 0.1rem rgba(0, 0, 0, 0.05);
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+.active::after {
+  content: "✓";
+  font-size: 1.2rem;
+  position: absolute;
+  color: #fff;
+  background-color: #242043;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  box-shadow: 0 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  right: 1rem;
+  top: 1rem;
+}
+
+.close-icon {
+  font-size: 2.8rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.collection__name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.collection__desc {
+  font-size: 1.2rem;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.create-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--save-btn-clr2);
+  font-size: 1.2rem;
+}
+
+.create-btn > ion-icon {
+  font-size: 2rem;
+  background-color: #fcf2f5;
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+
+.save-btn {
+  padding: 1rem 3.4rem;
+  border: none;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    var(--save-btn-clr1),
+    var(--save-btn-clr2)
+  );
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+}
+
+.save-btn:hover {
+  background: linear-gradient(
+    to right,
+    var(--save-btn-clr2),
+    var(--save-btn-clr1)
+  );
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 365px) {
+  html {
+    font-size: 45%;
+  }
+}
