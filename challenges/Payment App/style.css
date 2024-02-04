@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  width: 7rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #f29691;
+}
+
+ion-icon {
+  display: block;
+}
+
+.container {
+  max-width: 40rem;
+  border-radius: 1.8rem;
+  overflow: hidden;
+}
+
+.frequent-payments {
+  background: linear-gradient(to right, #e64366, #f04e53);
+  padding: 3.4rem;
+}
+
+.frequent-payments__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  color: #fff;
+}
+
+.frequent-payment__title {
+  font-size: 1.6rem;
+  font-weight: 520;
+}
+
+.frequent-payments__icon {
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.profile-images {
+  display: flex;
+  gap: 1rem;
+}
