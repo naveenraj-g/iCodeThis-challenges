@@ -40,6 +40,7 @@ ion-icon {
   max-width: 40rem;
   border-radius: 1.8rem;
   overflow: hidden;
+  box-shadow: 0 0 1.4rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .frequent-payments {
@@ -69,4 +70,53 @@ ion-icon {
 .profile-images {
   display: flex;
   gap: 1rem;
+}
+
+.add-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  text-align: center;
+}
+
+.contact {
+  outline: 0.1px solid #e0e0e0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2.8rem 0;
+}
+
+.contact-icon {
+  position: absolute;
+  top: 12%;
+  right: 10%;
+  color: #8d8d8d;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.add-contact-person-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.person-user-name {
+  font-size: 1rem;
+  color: #888888;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(to right, #e64366, #f04e53);
+  border: none;
+  cursor: pointer;
+  border-radius: 100rem;
+  padding: 0.8rem 1.4rem;
 }
