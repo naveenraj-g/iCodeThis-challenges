@@ -4,6 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings Widget</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="customize-widget-container">
+        <h1 class="heading-primary">Customize your widget</h1>
+        <form class="form">
+          <div class="form-item">
+            <input type="radio" name="option" id="contact" />
+            <label for="contact">Display Contact button</label>
+          </div>
+          <div class="form-item">
+            <input type="radio" name="option" id="email" checked />
+            <label for="email">Hide email address</label>
+          </div>
+          <div class="form-item">
+            <input type="radio" name="option" id="publish" />
+            <label for="publish">Display Publish button</label>
+          </div>
+        </form>
+        <div class="btn-container">
+          <button class="btn btn-cancel">Cancel</button>
+          <button class="btn btn-save">Save</button>
+        </div>
+
+        <menu class="customize-widget-menu">
+          <ion-icon name="ellipsis-horizontal" class="menu-icon"></ion-icon>
+          <div class="hidden">
+            <div class="menu-items">
+              <a href="javascript:void(0)" class="menu-item">Edit your list</a>
+              <a href="javascript:void(0)" class="menu-item"
+                >Account settings</a
+              >
+              <a href="javascript:void(0)" class="menu-item"
+                >View your profile</a
+              >
+            </div>
+          </div>
+        </menu>
+      </div>
+      <div class="other">
+        <h1 class="heading-primary">Other</h1>
+        <form class="other-form">
+          <div class="other-form-item">
+            <input type="checkbox" name="" id="on-notify" />
+            <label for="on-notify">Turn on in-app notifications.</label>
+          </div>
+          <div class="other-form-item">
+            <input type="checkbox" name="" id="newsletter" checked />
+            <label for="newsletter"
+              >Receive weekly newsletters and other offers.</label
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
