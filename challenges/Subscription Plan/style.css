@@ -1,0 +1,130 @@
+:root {
+  --body-bg: #f1f4ff;
+  --primary-clr: #1b245a;
+  --border-clr: #c0cdf3;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-bg);
+  font-family: sans-serif;
+  color: var(--primary-clr);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  margin: 1rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 3.4rem 3.8rem;
+  border-radius: 1.4rem;
+  box-shadow: 0 0.8rem 0.8rem rgba(27, 36, 90, 0.1);
+}
+
+.plan-detail {
+  border: 1px solid var(--border-clr);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  padding: 1rem 2rem;
+  margin-inline: auto;
+  height: 8.4rem;
+  aspect-ratio: 1 / 1;
+  width: fit-content;
+  margin-bottom: 1.2rem;
+}
+
+.plan-detail > ion-icon {
+  display: block;
+  font-size: 3.2rem;
+}
+
+.plan-desc {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.plan-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.kr {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.plan-cost {
+  font-weight: 900;
+  font-size: 2.8rem;
+}
+
+.plan-duration {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: -0.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.plan-downloads-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.download-detail {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: 1px solid var(--border-clr);
+  background-color: transparent;
+  border-radius: 0.8rem;
+  width: 4.2rem;
+  cursor: pointer;
+}
+
+.download-desc {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--primary-clr);
+  border: 2px solid var(--primary-clr);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--primary-clr);
+  font-weight: bold;
+}
+
+.active {
+  background-color: var(--primary-clr);
+  color: #fff;
+}
