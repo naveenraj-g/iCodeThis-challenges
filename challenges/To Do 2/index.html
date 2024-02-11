@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do 2</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="todo-heading">Groceries</h1>
+        <ion-icon name="ellipsis-horizontal" class="menu-icon"></ion-icon>
+      </div>
+      <p class="shared">
+        Shared with <a href="javascript:void(0)">1 person</a>
+      </p>
+      <ul class="todo-list">
+        <li class="list">
+          <input type="checkbox" id="list1" class="list-input" />
+          <label for="list1" class="list-name">Eggs</label>
+          <div class="checkbox-div">&check;</div>
+        </li>
+        <li class="list">
+          <input type="checkbox" id="list2" class="list-input" />
+          <label for="list2" class="list-name">Tomatoes</label>
+          <div class="checkbox-div">&check;</div>
+        </li>
+        <li class="list">
+          <input type="checkbox" id="list3" class="list-input" />
+          <label for="list3" class="list-name">Avocado</label>
+          <div class="checkbox-div">&check;</div>
+        </li>
+      </ul>
+
+      <h4 class="completed-list">COMPLETED (4)</h4>
+      <ul class="completed-todo-list">
+        <li class="list">
+          <input type="checkbox" id="list1-completed" class="list-input" />
+          <label for="list1-completed" class="list-name completed"
+            >Egg noodles</label
+          >
+          <div class="checkbox-div completed-border">&check;</div>
+        </li>
+        <li class="list">
+          <input type="checkbox" id="list2-completed" class="list-input" />
+          <label for="list2-completed" class="list-name completed"
+            >Scampi</label
+          >
+          <div class="checkbox-div completed-border">&check;</div>
+        </li>
+        <li class="list">
+          <input type="checkbox" id="list3-completed" class="list-input" />
+          <label for="list3-completed" class="list-name completed"
+            >Orange juice</label
+          >
+          <div class="checkbox-div completed-border">&check;</div>
+        </li>
+        <li class="list">
+          <input type="checkbox" id="list4-completed" class="list-input" />
+          <label for="list4-completed" class="list-name completed"
+            >Apples</label
+          >
+          <div class="checkbox-div completed-border">&check;</div>
+        </li>
+      </ul>
+
+      <button class="btn">
+        <ion-icon name="add-outline" class="add-list-icon"></ion-icon>
+      </button>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
