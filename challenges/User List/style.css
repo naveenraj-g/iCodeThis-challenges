@@ -14,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -21,10 +22,12 @@ body {
   color: var(--primary-clr);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .container {
-  max-width: 100rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -40,10 +43,11 @@ img {
 }
 
 .user-img-con {
-  width: 6rem;
+  max-width: 7.5rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
+  height: fit-content;
 }
 
 li {
@@ -55,6 +59,8 @@ li {
   padding: 1.4rem 1rem;
   gap: 1.8rem;
   justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4.8rem;
 }
 
 .users {
@@ -94,6 +100,7 @@ li {
 
 .nav {
   align-self: flex-end;
+  transition: all 0.3s;
 }
 
 .nav-item {
@@ -115,4 +122,100 @@ li {
   font-size: 1.6rem;
   color: var(--primary-clr);
   transition: all 0.3s;
+}
+
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.user {
+  display: flex;
+  width: 28rem;
+  gap: 1rem;
+  padding: 2.4rem 2.4rem 4.4rem 2.4rem;
+  border-radius: 1.2rem;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.user:hover {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.user-name {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.user-location {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.user-categorys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.user-category {
+  color: #718edd;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 100rem;
+  padding: 0.1rem 0.6rem;
+}
+
+.nav-open-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 0.6rem;
+}
+
+.nav-close-icon {
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggle {
+  transform: translateX(0) !important;
+}
+
+@media (max-width: 750px) {
+  .nav-open-icon {
+    display: block;
+  }
+
+  .nav-close-icon {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+  }
+
+  .nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 2.4rem;
+    padding-top: 6.8rem;
+    background-color: #fff;
+    box-shadow: 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transform: translateX(100%);
+  }
+
+  .nav-items {
+    flex-direction: column;
+  }
 }

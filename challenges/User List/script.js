@@ -24,7 +24,7 @@ const usersData = [
         userCategort: ["Maintenance", "gears", "frames", "repair"]
     },
     {
-        userProfileImg: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        userProfileImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         userName: "Amy Campbell",
         userLocation: "Warrior, AI",
         userCategort: ["music", "disks"]
@@ -56,3 +56,44 @@ const userHTML = `
     </div>
 </div>
 `;
+
+const usersContainer = document.querySelector(".users-container");
+const nav = document.querySelector(".nav");
+const navOpenIcon = document.querySelector(".nav-open-icon");
+const navCloseIcon = document.querySelector(".nav-close-icon");
+
+usersData.forEach(data => {
+    const category = data.userCategort.map(cat => {
+        return `
+                    <p class="user-category">${cat}</p>
+                    `;
+    });
+
+    const HTML = `
+    <div class="user">
+        <figure class="user-img-con">
+            <img
+                src=${data.userProfileImg}
+                alt="user image"
+                class="user-img"
+            />
+        </figure>
+        <div class="user-desc">
+            <h2 class="user-name">${data.userName}</h2>
+            <p class="user-location">${data.userLocation}</p>
+            <div class="user-categorys">
+                ${category.join("")}
+            </div>
+        </div>
+    </div>
+    `;
+    usersContainer.insertAdjacentHTML("beforeend", HTML);
+});
+
+navOpenIcon.addEventListener("click", () => {
+    nav.classList.toggle("nav-toggle");
+});
+
+navCloseIcon.addEventListener("click", () => {
+    nav.classList.toggle("nav-toggle");
+});
