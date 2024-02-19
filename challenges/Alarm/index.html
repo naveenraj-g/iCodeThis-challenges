@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="alarm-header">
+          <ion-icon name="chevron-back-outline" class="go-back-icon"></ion-icon>
+          <h3 class="alarm">Alarm</h3>
+          <ion-icon
+            name="settings-outline"
+            class="alarm-settings-icon"
+          ></ion-icon>
+        </div>
+        <div class="current-time">
+          <h1 class="cur-time">4:59 PM</h1>
+          <p class="day">3 - JANUARY</p>
+        </div>
+      </header>
+      <main class="alarm-timings">
+        <button class="add-btn">
+          <ion-icon name="add-outline" class="plus-icon"></ion-icon>
+        </button>
+        <div class="alarm alarm-disable">
+          <div class="alarm-times">
+            <h2 class="alarm-time">7:30 pm</h2>
+            <div class="alarm-toggle">
+              <div class="alarm-button"></div>
+            </div>
+          </div>
+          <ul class="days">
+            <li class="day">Su</li>
+            <li class="day act">Mo</li>
+            <li class="day act">Tu</li>
+            <li class="day">We</li>
+            <li class="day act">Th</li>
+            <li class="day">Fr</li>
+            <li class="day">Sa</li>
+          </ul>
+        </div>
+
+        <div class="alarm alarm-active">
+          <div class="alarm-times">
+            <h2 class="alarm-time">5:45 am</h2>
+            <div class="alarm-toggle">
+              <div class="alarm-button alarm-toggle-active"></div>
+            </div>
+          </div>
+          <ul class="days">
+            <li class="day">Su</li>
+            <li class="day act">Mo</li>
+            <li class="day act">Tu</li>
+            <li class="day act">We</li>
+            <li class="day act">Th</li>
+            <li class="day act">Fr</li>
+            <li class="day">Sa</li>
+          </ul>
+        </div>
+
+        <div class="alarm alarm-disable">
+          <div class="alarm-times">
+            <h2 class="alarm-time">1:25 pm</h2>
+            <div class="alarm-toggle">
+              <div class="alarm-button"></div>
+            </div>
+          </div>
+          <ul class="days">
+            <li class="day">Su</li>
+            <li class="day">Mo</li>
+            <li class="day act">Tu</li>
+            <li class="day act">We</li>
+            <li class="day">Th</li>
+            <li class="day act">Fr</li>
+            <li class="day">Sa</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

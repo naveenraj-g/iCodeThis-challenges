@@ -1,0 +1,205 @@
+:root {
+  --body-bg: #052745;
+  --header-bg: #052d50;
+  --main-bg: #023662;
+  --alarm-active-clr: #36c3fe;
+  --primary-clr: #f9feff;
+  --disabled-alarm-clr: #385f84;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+ion-icon {
+  display: block;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0.8rem;
+  background-color: var(--main-bg);
+}
+
+header {
+  background-color: var(--header-bg);
+  clip-path: polygon(0 1%, 100% 0, 100% 90%, 0% 100%);
+  padding-top: 1.4rem !important;
+}
+
+main {
+  background-color: var(--main-bg);
+  padding-top: 2.4rem !important;
+  padding-bottom: 3.4rem !important;
+  position: relative;
+}
+
+header,
+main {
+  padding: 0 2.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.alarm-header {
+  color: var(--primary-clr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.go-back-icon,
+.alarm-settings-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.alarm {
+  font-size: 1.4rem;
+}
+
+.current-time {
+  color: var(--primary-clr);
+  text-align: center;
+  padding: 3.4rem 0 6.4rem 0;
+}
+
+.cur-time {
+  font-size: 2.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.day {
+  font-size: 1.2rem;
+  color: #79838e;
+}
+
+.add-btn {
+  border-radius: 50%;
+  border: none;
+  padding: 0.6rem;
+  background-color: var(--alarm-active-clr);
+  position: absolute;
+  top: -3.4rem;
+  right: 1.8rem;
+  cursor: pointer;
+}
+
+.plus-icon {
+  color: var(--primary-clr);
+  font-size: 3.2rem;
+}
+
+.alarm-times {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.alarm-timings {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.alarm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.alarm h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.alarm-disable .alarm-time {
+  color: var(--disabled-alarm-clr);
+}
+
+.alarm-active .alarm-time {
+  color: var(--primary-clr);
+}
+
+.alarm-toggle {
+  height: 0.6rem;
+  width: 3.2rem;
+  border-radius: 100rem;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--header-bg);
+  margin-top: 0.8rem;
+}
+
+.alarm-toggle-active {
+  transform: translateX(80%);
+}
+
+.alarm-button {
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--body-bg);
+  top: -0.65rem;
+  transition: all 0.3s;
+}
+
+.alarm-button.alarm-toggle-active {
+  background-color: var(--alarm-active-clr);
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.day {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.alarm-disable .day {
+  color: #0f4572;
+}
+
+.alarm-disable .act {
+  color: #326492;
+}
+
+.alarm-active .day {
+  color: #326492;
+}
+
+.alarm-active .act {
+  color: #bfcbd9;
+}
+
+@media (max-width: 295px) {
+  html {
+    font-size: 55%;
+  }
+}
