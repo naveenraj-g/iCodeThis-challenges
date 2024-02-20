@@ -39,7 +39,9 @@ const months = {
 
 let hr;
 if (hour > 12) {
-    hr = hour - 12
+    hr = hour - 12;
+} else {
+    hr = hour;
 }
 
 time.textContent = `${hr}:${minute} ${hour < 12 ? "AM" : "PM"}`;
