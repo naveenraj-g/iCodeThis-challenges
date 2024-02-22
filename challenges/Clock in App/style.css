@@ -1,0 +1,101 @@
+:root {
+  --body-bg: #4c2930;
+  --nav-bg: #f05e49;
+  --bg: #fff7f1;
+  --primary-clr: #acacac;
+  --secondary-clr: #e0e0e0;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-bg);
+  color: var(--primary-clr);
+  display: grid;
+  place-items: center;
+}
+
+ion-icon {
+  display: block;
+}
+
+.container {
+  background-color: var(--bg);
+  width: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 50rem;
+  position: relative;
+  margin: 0.6rem;
+}
+
+.clock {
+  width: 10rem;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 1rem;
+  background-color: var(--nav-bg);
+  margin-bottom: 2.8rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(240, 94, 73, 0.6);
+}
+
+.back-icon,
+.search-icon {
+  color: var(--bg);
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.back-icon {
+  font-size: 2.8rem;
+}
+
+.heading-primary {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #8a8a8a;
+  margin-bottom: 2.4rem;
+}
+
+.no-hours {
+  text-align: center;
+}
+
+.no-hours-desc {
+  font-size: 1.6rem;
+  max-width: 18ch;
+  margin: 0 auto;
+}
+
+.add-remove-icon {
+  font-size: 4.2rem;
+  background-color: var(--nav-bg);
+  padding: 0.4rem;
+  border-radius: 50%;
+  color: var(--bg);
+  cursor: pointer;
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  box-shadow: 0 0.4rem 2.4rem rgba(240, 94, 73, 0.4);
+}
