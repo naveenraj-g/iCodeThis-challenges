@@ -77,7 +77,7 @@ ion-icon {
   margin-bottom: 2.4rem;
 }
 
-.no-hours {
+.no-hour {
   text-align: center;
 }
 
@@ -98,4 +98,86 @@ ion-icon {
   bottom: 1.8rem;
   right: 1.8rem;
   box-shadow: 0 0.4rem 2.4rem rgba(240, 94, 73, 0.4);
+}
+
+.add-hours-con {
+  padding: 1rem;
+}
+
+.add-hours {
+  background-color: #fff;
+  padding: 1.8rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.add-hours-title {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #757575;
+  margin-bottom: 1rem;
+}
+
+.add-hours-options {
+  padding: 1rem;
+  width: 100%;
+  color: #9b9b9b;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: none;
+  margin-bottom: 0.5rem;
+  border: 1px solid #9b9b9b;
+}
+
+.no-hours {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2.8rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.hours-number {
+  padding: 0.6rem;
+  text-align: center;
+  width: 11.5rem;
+  font-size: 2.2rem;
+  color: #838383;
+  border: 1px solid #969696;
+}
+
+.btn-add-min {
+  background-color: #d4d4d4;
+  padding: 0.7rem 2.4rem;
+  font-size: 2.2rem;
+  color: #838383;
+  cursor: pointer;
+}
+
+.save-cancel {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.btn-cancel,
+.btn-save {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.4rem 3.4rem;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  color: var(--primary-clr);
+}
+
+.btn-save {
+  background-color: var(--nav-bg);
+  border-radius: 0.4rem;
+  color: #fff;
 }
