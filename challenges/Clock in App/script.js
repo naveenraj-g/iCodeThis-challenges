@@ -79,8 +79,8 @@ const addHours = `
             </select>
             <div class="no-hours">
               <input type="number" class="hours-number" value="1" />
-              <button class="btn btn-add-min">+</button>
-              <button class="btn btn-add-min">-</button>
+              <button class="btn btn-add-min btn-inc">+</button>
+              <button class="btn btn-add-min btn-dec">-</button>
             </div>
             <div class="save-cancel">
               <button class="btn btn-cancel">Cancel</button>
@@ -93,32 +93,51 @@ const addHours = `
 let htmlRenderCondition = "notime";
 
 function handleBackBtn() {
-    if (htmlRenderCondition !== "notime") {
-        htmlRenderCondition = "notime";
-        renderCondition();
-    }
+  if (htmlRenderCondition !== "notime") {
+    htmlRenderCondition = "notime";
+    renderCondition();
+  }
 }
 
 function handleRenderHours(renderHoursCondition) {
-    htmlRenderCondition = renderHoursCondition;
-    renderCondition();
+  htmlRenderCondition = renderHoursCondition;
+  renderCondition();
+}
+
+function handleIncDecBtns(btnType, input) {
+  if (btnType === "inc") {
+    input.value++
+  }
+
+  if (btnType === "dec") {
+    if (input.value > 0) {
+      input.value--;
+    }
+  }
 }
 
 function renderCondition() {
-    container.textContent = ""
-    if (htmlRenderCondition === "notime") {
-        container.insertAdjacentHTML("afterbegin", noHoursHTML);
-        const addHoursBtn = document.querySelector(".add-remove-icon");
-        addHoursBtn.addEventListener("click", () => handleRenderHours("addhours"));
-    }
+  container.textContent = ""
+  if (htmlRenderCondition === "notime") {
+    container.insertAdjacentHTML("afterbegin", noHoursHTML);
+    const addHoursBtn = document.querySelector(".add-remove-icon");
+    addHoursBtn.addEventListener("click", () => handleRenderHours("addhours"));
+  }
 
-    if (htmlRenderCondition === "addhours") {
-        container.insertAdjacentHTML("beforeend", addHours);
-        const form = document.querySelector(".add-hours-form");
-        const cancelBtn = document.querySelector(".btn-cancel");
-        form.addEventListener("submit", (e) => e.preventDefault());
-        cancelBtn.addEventListener("click", () => handleRenderHours("notime"));
-    }
+  if (htmlRenderCondition === "addhours") {
+    container.insertAdjacentHTML("beforeend", addHours);
+    const form = document.querySelector(".add-hours-form");
+    const cancelBtn = document.querySelector(".btn-cancel");
+    const saveBtn = document.querySelector(".btn-save");
+    const inputNum = document.querySelector(".hours-number");
+    const incBtn = document.querySelector(".btn-inc");
+    const decBtn = document.querySelector(".btn-dec");
+    form.addEventListener("submit", (e) => e.preventDefault());
+    cancelBtn.addEventListener("click", () => handleRenderHours("notime"));
+    saveBtn.addEventListener("click", () => handleRenderHours("notime"));
+    incBtn.addEventListener("click", () => handleIncDecBtns("inc", inputNum));
+    decBtn.addEventListener("click", () => handleIncDecBtns("dec", inputNum));
+  }
 }
 
 renderCondition();
