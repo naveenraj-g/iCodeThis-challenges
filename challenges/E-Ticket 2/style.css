@@ -1,0 +1,258 @@
+:root {
+  --body-bg1: #d4385d;
+  --body-bg2: #f68a4a;
+  --card-bg: #ececec;
+  --clr-1: #f57a26;
+  --clr-2: #f53563;
+  --clr: #5b5b5b;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+  color: var(--clr);
+  background: linear-gradient(to right top, var(--body-bg1), var(--body-bg2));
+}
+
+ion-icon,
+.battery-percent {
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  background-color: var(--card-bg);
+  margin: 0.8rem;
+  max-width: 30rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+  gap: 2.8rem;
+}
+
+.iphone-con,
+.battery-con,
+.battery {
+  display: flex;
+  align-items: center;
+}
+
+.iphone-con,
+.battery-con {
+  gap: 0.6rem;
+}
+
+.iphone,
+.battery-percent,
+.time {
+  font-size: 1.1rem;
+}
+
+.wifi-icon,
+.bluetooth-icon {
+  font-size: 1.4rem;
+}
+
+.bluetooth-icon {
+  color: #9b9b9b;
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.battery-icon {
+  font-size: 1.7rem;
+}
+
+.heading-secondary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #747474;
+  text-align: center;
+  font-weight: 600;
+  margin: 1.2rem 0;
+}
+
+.ticket-container {
+  padding: 0 1.8rem;
+}
+
+.ticket-bg-div,
+.ticket-container-border {
+  background: linear-gradient(to right, var(--clr-1), var(--clr-2));
+}
+
+.ticket-container-border {
+  height: 0.5rem;
+}
+
+.ticket-div {
+  background-color: #fff;
+  padding: 0 4.2rem;
+  text-align: center;
+}
+
+.ticket-div-1 {
+  padding: 0 4.2rem;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  padding: 2.4rem 0 1.8rem 0;
+  background: linear-gradient(to right, var(--clr-1), var(--clr-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.2rem;
+  line-height: 1;
+}
+
+.book-no {
+  font-size: 1.1rem;
+  padding-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-no-bold {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.ticket-div-1 {
+  display: flex;
+  gap: 2.6rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.ta-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ta-title {
+  font-size: 1.1rem;
+  color: #e7e7e7;
+}
+
+.ta-no {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.ticket-di {
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  border-bottom: 3px dotted #ccc;
+}
+
+.ticket-desc {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.ticket-desc-title {
+  font-size: 1.1rem;
+  color: #a3a3a3;
+}
+
+.ticket-desc-pd {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #a5a5a5;
+}
+
+.bar-code {
+  background-color: #fff;
+  padding: 1.8rem;
+}
+
+.ticket {
+  margin: 0 auto;
+  margin-top: 0.8rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 550;
+  color: #858585;
+  max-width: 32ch;
+  margin-bottom: 2.8rem;
+}
+
+.footer {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.6rem;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.footer-icon {
+  font-size: 2.2rem;
+}
+
+.footer-item {
+  color: var(--clr-1);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-item-active {
+  background-color: rgb(233, 233, 233);
+}
+
+@media (max-width: 315px) {
+  html {
+    font-size: 50%;
+  }
+}

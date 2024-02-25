@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Ticket 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="iphone-con">
+          <p class="iphone">iPhone</p>
+          <ion-icon name="wifi" class="wifi-icon"></ion-icon>
+        </div>
+        <p class="time">4:21PM</p>
+        <div class="battery-con">
+          <ion-icon name="bluetooth" class="bluetooth-icon"></ion-icon>
+          <div class="battery">
+            <span class="battery-percent">100%</span>
+            <ion-icon name="battery-full" class="battery-icon"></ion-icon>
+          </div>
+        </div>
+      </nav>
+
+      <h2 class="heading-secondary">my tickets</h2>
+
+      <div class="ticket-container">
+        <div class="ticket-container-border"></div>
+        <div class="ticket-div">
+          <h1 class="heading-primary">THE LEGEND OF TARZAN</h1>
+          <p class="book-no">
+            BOOKING NR:<span class="book-no-bold">#25667</span>
+          </p>
+        </div>
+        <div class="ticket-bg-div">
+          <div class="ticket-div-1">
+            <div class="ta-detail">
+              <p class="ta-title">ROOM</p>
+              <p class="ta-no">14</p>
+            </div>
+            <div class="ta-detail">
+              <p class="ta-title">ROW</p>
+              <p class="ta-no">7</p>
+            </div>
+            <div class="ta-detail">
+              <p class="ta-title">SEAT</p>
+              <p class="ta-no">18</p>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-di">
+          <div class="ticket-desc">
+            <p class="ticket-desc-title">PRICE</p>
+            <p class="ticket-desc-pd">$5</p>
+          </div>
+          <div class="ticket-desc">
+            <p class="ticket-desc-title">DATE</p>
+            <p class="ticket-desc-pd">09.05.2016</p>
+          </div>
+        </div>
+        <figure class="bar-code">
+          <img src="./barcode.png" alt="ticket barcode" class="bar-code-img" />
+        </figure>
+      </div>
+      <p class="ticket">
+        Use the booking number to pick up your tickets before the show
+      </p>
+
+      <footer class="footer">
+        <div class="nav-item">
+          <ion-icon name="grid-outline" class="footer-icon"></ion-icon>
+          <p class="footer-item">Home</p>
+        </div>
+        <div class="nav-item">
+          <ion-icon name="film-outline" class="footer-icon"></ion-icon>
+          <p class="footer-item">Movies</p>
+        </div>
+        <div class="nav-item">
+          <ion-icon name="star-outline" class="footer-icon"></ion-icon>
+          <p class="footer-item">Favorites</p>
+        </div>
+        <div class="nav-item nav-item-active">
+          <ion-icon name="ticket-outline" class="footer-icon"></ion-icon>
+          <p class="footer-item">My Tickets</p>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
