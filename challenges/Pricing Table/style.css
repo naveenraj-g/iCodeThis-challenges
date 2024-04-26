@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #f5f8ff;
+  color: #141942;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0.6rem;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 1.4rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right top, #f7eeff, #eafcff, #ffffe8);
+  border-radius: 0.8rem;
+  padding: 2.8rem;
+  gap: 2.8rem;
+}
+
+.pricing-title {
+  font-size: 2rem;
+}
+
+.package-price {
+  margin-top: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.pri {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.pricing {
+  font-size: 2.6rem;
+  margin-top: 1rem;
+}
+
+.price {
+  font-size: 4.4rem;
+}
+
+.package-dur {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.package-desc {
+  font-size: 1.5rem;
+  max-width: 25ch;
+  font-weight: 600;
+  line-height: 1.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.package-cta {
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.package-cta-free {
+  background-color: #edbbfe;
+}
+
+.package-cta-standard {
+  background-color: #adf1f5;
+}
+
+.package-cta-premium {
+  background-color: #ffddb7;
+}
+
+.package-cta-free:hover {
+  border: 3px solid #edbbfe;
+  background-color: transparent;
+}
+
+.package-cta-standard:hover {
+  border: 3px solid #adf1f5;
+  background-color: transparent;
+}
+
+.package-cta-premium:hover {
+  border: 3px solid #ffddb7;
+  background-color: transparent;
+}
+
+@media (max-width: 790px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 790px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 570px) {
+  html {
+    font-size: 55%;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 5.4rem;
+  }
+}
